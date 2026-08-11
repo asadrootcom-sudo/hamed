@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصيانة | مؤسسة حامد درويش الخميسي</title>
+  <meta name="description" content="خدمة الصيانة الوقائية والتصحيحية من مؤسسة حامد درويش الخميسي — فرق فنية متخصصة وخططط صيانة شاملة للمباني والمنشآت في جميع مدن السعودية.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hamedgco.com/Services/Maintenance-service/Maintenance.html">
+  <meta property="og:title" content="الصيانة | مؤسسة حامد درويش الخميسي">
+  <meta property="og:description" content="صيانة وقائية وتصحيحية احترافية بفرق فنية متخصصة — جاري توثيق المشاريع السابقة.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hamedgco.com/Services/Maintenance-service/Maintenance.html">
+  <meta property="og:image" content="https://www.alkhamisi.sa/og-maintenance.jpg">
+  <meta property="og:locale" content="ar_SA">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://hamedgco.com/"},
+      {"@type": "ListItem", "position": 2, "name": "الخدمات", "item": "https://https://hamedgco.com/Services/Services.html"},
+      {"@type": "ListItem", "position": 3, "name": "الصيانة", "item": "https://https://hamedgco.com/Services/Maintenance-service/Maintenance.html"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#2F1D0C', secondary: '#6E473B', light: '#E3D8C8', bg: '#FAF7F2' },
+          fontFamily: { ar: ['Tajawal', 'sans-serif'], en: ['Inter', 'sans-serif'] },
+          borderRadius: { 'none': '0px', 'sm': '2px', 'md': '4px' },
+          maxWidth: { '8xl': '1400px' }
+        }
+      }
+    }
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Tajawal',sans-serif;background:#FAF7F2;color:#2F1D0C;overflow-x:hidden}
+    ::selection{background:#6E473B;color:#fff}
+    ::-webkit-scrollbar{width:8px}
+    ::-webkit-scrollbar-track{background:#E3D8C8}
+    ::-webkit-scrollbar-thumb{background:#6E473B}
+    ::-webkit-scrollbar-thumb:hover{background:#2F1D0C}
+
+    .geo-diagonal{background-image:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(110,71,59,0.06) 20px,rgba(110,71,59,0.06) 21px)}
+    .geo-grid{background-image:linear-gradient(rgba(110,71,59,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(110,71,59,0.08) 1px,transparent 1px);background-size:48px 48px}
+    .geo-blocks{background-image:linear-gradient(135deg,rgba(110,71,59,0.04) 25%,transparent 25%),linear-gradient(225deg,rgba(110,71,59,0.04) 25%,transparent 25%),linear-gradient(45deg,rgba(110,71,59,0.04) 25%,transparent 25%),linear-gradient(315deg,rgba(110,71,59,0.04) 25%,transparent 25%);background-size:60px 60px;background-position:30px 0,30px 0,0 0,0 0}
+
+    .bracket-tr::before,.bracket-tr::after,.bracket-bl::before,.bracket-bl::after{content:'';position:absolute;background:#6E473B}
+    .bracket-tr::before{top:0;right:0;width:32px;height:2px}
+    .bracket-tr::after{top:0;right:0;width:2px;height:32px}
+    .bracket-bl::before{bottom:0;left:0;width:32px;height:2px}
+    .bracket-bl::after{bottom:0;left:0;width:2px;height:32px}
+
+    .diamond{width:12px;height:12px;background:#6E473B;transform:rotate(45deg);display:inline-block;flex-shrink:0}
+    .diamond-sm{width:8px;height:8px}
+    .diamond-white{background:#fff}
+
+    .brand-img{filter:sepia(8%) saturate(85%) brightness(97%) contrast(105%);transition:filter .5s ease,transform .6s ease}
+
+    #loader{position:fixed;inset:0;z-index:9999;background:#2F1D0C;display:flex;align-items:center;justify-content:center;transition:opacity .5s ease,visibility .5s ease}
+    #loader.hidden{opacity:0;visibility:hidden}
+    .loader-diamond{width:24px;height:24px;border:2px solid #E3D8C8;transform:rotate(45deg);animation:loaderPulse 1s ease-in-out infinite}
+    @keyframes loaderPulse{0%,100%{opacity:.3;transform:rotate(45deg) scale(.8)}50%{opacity:1;transform:rotate(45deg) scale(1.2)}}
+
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.active{opacity:1;transform:translateY(0)}
+    .reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}
+    .reveal-right.active{opacity:1;transform:translateX(0)}
+    .reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+    .reveal-left.active{opacity:1;transform:translateX(0)}
+    .reveal-scale{opacity:0;transform:scale(.92);transition:opacity .7s ease,transform .7s ease}
+    .reveal-scale.active{opacity:1;transform:scale(1)}
+    .stagger-1{transition-delay:.1s}.stagger-2{transition-delay:.2s}.stagger-3{transition-delay:.3s}
+    .stagger-4{transition-delay:.4s}.stagger-5{transition-delay:.5s}
+
+    .nav-scrolled{background:rgba(250,247,242,0.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(47,29,12,0.1)}
+    .nav-link{position:relative;padding:4px 0}
+    .nav-link::after{content:'';position:absolute;bottom:-2px;right:0;width:0;height:2px;background:#6E473B;transition:width .3s ease}
+    .nav-link:hover::after,.nav-link.active::after{width:100%}
+
+    @keyframes floatSlow{0%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(-10px) rotate(1deg)}75%{transform:translateY(-6px) rotate(-1deg)}}
+    .float-anim{animation:floatSlow 5.5s ease-in-out infinite}
+
+    @keyframes progressFill{0%{width:0}100%{width:70%}}
+    .progress-bar{animation:progressFill 2s ease-out 0.8s both}
+
+    /* Horizontal icon cards */
+    .icon-card{border:1px solid rgba(47,29,12,0.08);background:#fff;transition:all .35s ease}
+    .icon-card:hover{border-color:rgba(110,71,59,0.2);box-shadow:0 8px 24px rgba(47,29,12,0.08);transform:translateY(-3px)}
+    .icon-card .ic-wrap{transition:all .35s ease}
+    .icon-card:hover .ic-wrap{border-color:#6E473B;background:rgba(110,71,59,0.05)}
+
+    .wa-float{position:fixed;bottom:24px;left:24px;z-index:100;width:56px;height:56px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:transform .3s ease,box-shadow .3s ease}
+    .wa-float:hover{transform:translateY(-3px);box-shadow:0 6px 24px rgba(37,211,102,0.5)}
+    .back-top{position:fixed;bottom:24px;right:24px;z-index:100;width:44px;height:44px;background:#2F1D0C;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .3s ease}
+    .back-top.visible{opacity:1;visibility:visible}
+    .back-top:hover{background:#6E473B}
+
+    .mobile-menu{position:fixed;inset:0;z-index:90;background:rgba(250,247,242,0.98);backdrop-filter:blur(16px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;visibility:hidden;transition:all .4s ease}
+    .mobile-menu.open{opacity:1;visibility:visible}
+    .mobile-menu a{font-size:24px;font-weight:700;color:#2F1D0C;padding:12px 24px;transition:color .2s ease}
+    .hamburger span{display:block;width:24px;height:2px;background:#2F1D0C;transition:all .3s ease}
+    .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+    .hamburger.active span:nth-child(2){opacity:0}
+    .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+
+    .toast{position:fixed;top:100px;left:50%;transform:translateX(-50%) translateY(-20px);z-index:200;background:#2F1D0C;color:#fff;padding:14px 28px;font-family:'Tajawal',sans-serif;font-size:15px;opacity:0;transition:all .3s ease;pointer-events:none}
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal,.reveal-right,.reveal-left,.reveal-scale{opacity:1;transform:none}.float-anim{animation:none}.progress-bar{animation:none;width:70%}}
+  </style>
+</head>
+<body class="font-ar">
+
+  <div id="loader"><div class="loader-diamond"></div></div>
+  <div id="toast" class="toast"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0" aria-label="الرئيسية">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="flex-shrink-0">
+            <rect x="2" y="18" width="10" height="20" fill="#2F1D0C"/>
+            <rect x="15" y="10" width="10" height="28" fill="#6E473B"/>
+            <polygon points="25,10 38,10 31.5,2" fill="#2F1D0C"/>
+            <rect x="28" y="18" width="10" height="20" fill="#E3D8C8"/>
+          </svg>
+          <div class="hidden sm:block">
+            <div class="text-primary font-bold text-sm leading-tight">مؤسسة حامد درويش</div>
+            <div class="text-primary font-bold text-sm leading-tight">الخميسي</div>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="/index.html" class="nav-link text-primary text-sm font-medium">الرئيسية</a>
+          <a href="/About/About.html" class="nav-link text-primary text-sm font-medium">من نحن</a>
+          <a href="/services/Services.html" class="nav-link active text-primary text-sm font-medium">الخدمات</a>
+          <a href="/Projects/Projects.html" class="nav-link text-primary text-sm font-medium">المشاريع</a>
+          <a href="/Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقلات</a>
+          <a href="/Faq/Faq.html" class="nav-link text-primary text-sm font-medium">الأسئلة الشائعة</a>
+          <a href="/Contact/Contact.html" class="nav-link text-primary text-sm font-medium">اتصل بنا</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <button onclick="openQuoteModal()" class="hidden md:inline-flex items-center gap-2 bg-primary text-white text-sm font-medium px-6 py-2.5 hover:bg-secondary transition-colors duration-200">اطلب عرض سعر</button>
+          <button class="lg:hidden hamburger flex flex-col gap-1.5 p-2" onclick="toggleMobile()" aria-label="القائمة"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="/index.html" onclick="closeMobile()">الرئيسية</a>
+    <a href="/About/About.html" onclick="closeMobile()">من نحن</a>
+    <a href="/services/Services.html" onclick="closeMobile()">الخدمات</a>
+    <a href="/Projects/Projects.html" onclick="closeMobile()">المشاريع</a>
+    <a href="/Articles/Articles.html" onclick="closeMobile()">المقلات</a>
+    <a href="/Faq/Faq.html" onclick="closeMobile()">الأسئلة الشائعة</a>
+    <a href="/Contact/Contact.html" onclick="closeMobile()">اتصل بنا</a>
+    <button onclick="closeMobile();openQuoteModal()" class="mt-6 bg-primary text-white text-lg font-medium px-10 py-3">اطلب عرض سعر</button>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.QrkvxP5-g0K-kqEPeZ3OOwHaEM?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="خدمات صيانة المباني والمنشآت" class="w-full h-full object-cover brand-img" style="transform:scale(1.05)" loading="eager">
+      <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(47,29,12,0.95) 0%,rgba(47,29,12,0.55) 45%,rgba(47,29,12,0.15) 100%)"></div>
+      <div class="absolute inset-0 geo-diagonal opacity-20"></div>
+    </div>
+    <div class="absolute top-28 right-8 lg:right-16 w-16 h-16 bracket-tr hidden md:block"></div>
+    <div class="absolute bottom-8 left-8 lg:left-16 w-16 h-16 bracket-bl hidden md:block"></div>
+
+    <div class="relative z-10 max-w-8xl mx-auto px-6 lg:px-10">
+      <nav aria-label="التنقل التفصيلي" class="flex items-center gap-2 text-sm mb-8 reveal">
+        <a href="/index.html" class="text-light/50 hover:text-light transition-colors">الرئيسية</a>
+        <span class="text-secondary/50 text-primary transition-colors"> ↚ </span>
+        <a href="/services/Services.html" class="text-light/50 hover:text-light transition-colors">الخدمات</a>
+        <span class="text-secondary/50 text-primary transition-colors"> ↚ </span>
+        <span class="text-light font-medium">الصيانة</span>
+      </nav>
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-3 mb-6 reveal">
+          <div class="diamond diamond-sm diamond-white"></div>
+          <span class="text-light/70 text-sm font-en tracking-wider">MAINTENANCE & FACILITY MANAGEMENT</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 reveal stagger-1">
+          نعمل على تجهيز معرض<br><span class="text-light">أعمال الصيانة</span>
+        </h1>
+        <p class="text-lg text-light/60 leading-relaxed max-w-xl reveal stagger-2">
+          قدمت الشركة خدمات صيانة للعديد من المشاريع والمنشآت، ونعمل حالياً على جمع المشاريع السابقة وإضافة الصور والتفاصيل الفنية ليتم عرضها في هذه الصفحة قريباً.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FULL-WIDTH ILLUSTRATION ===================== -->
+  <section class="py-16 lg:py-20 bg-bg overflow-hidden reveal-scale">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10">
+      <div class="float-anim">
+        <svg viewBox="0 0 900 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full" role="img" aria-label="رسم هندسي تعبيري عن خدمات الصيانة">
+          <!-- Faint grid -->
+          <line x1="0" y1="68" x2="900" y2="68" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+          <line x1="0" y1="136" x2="900" y2="136" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+          <line x1="0" y1="204" x2="900" y2="204" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+          <line x1="0" y1="272" x2="900" y2="272" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+          <line x1="150" y1="0" x2="150" y2="340" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+          <line x1="300" y1="0" x2="300" y2="340" stroke="#E3D8C8" stroke-width="0.3" stroke-dashed="4 6"/>
+          <line x1="450" y1="0" x2="450" y2="340" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+          <line x1="600" y1="0" x2="600" y2="340" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+          <line x1="750" y1="0" x2="750" y2="340" stroke="#E3D8C8" stroke-width="0.3" stroke-dasharray="4 6"/>
+
+          <!-- Building outline -->
+          <rect x="180" y="60" width="540" height="240" fill="none" stroke="#2F1D0C" stroke-width="2"/>
+          <!-- Floors -->
+          <line x1="180" y1="120" x2="720" y2="120" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <line x1="180" y1="180" x2="720" y2="180" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <line x1="180" y1="240" x2="720" y2="240" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <!-- Columns -->
+          <line x1="270" y1="60" x2="270" y2="300" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <line x1="360" y1="60" x2="360" y2="300" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <line x1="450" y1="60" x2="450" y2="300" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <line x1="540" y1="60" x2="540" y2="300" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <line x1="630" y1="60" x2="630" y2="300" stroke="#2F1D0C" stroke-width="1" stroke-dasharray="6 3"/>
+          <!-- Floor labels -->
+          <text x="170" y="96" fill="#6E473B" font-family="Inter" font-size="9" text-anchor="end" opacity="0.5">F3</text>
+          <text x="170" y="156" fill="#6E473B" font-family="Inter" font-size="9" text-anchor="end" opacity="0.5">F2</text>
+          <text x="170" y="216" fill="#6E473B" font-family="Inter" font-size="9" text-anchor="end" opacity="0.5">F1</text>
+
+          <!-- Wrench icon (left side) -->
+          <g transform="translate(80,140)">
+            <circle cx="0" cy="0" r="30" fill="none" stroke="#6E473B" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M-8 -4 L-3 0 L8 0 L5 -10 L8 -20 L-3 -24 L-8 -4" fill="none" stroke="#2F1D0C" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M-18 -8 L-14 -14 L6 -14" fill="none" stroke="#2F1D0C" stroke-width="2" stroke-linecap="round"/>
+            <text x="0" y="48" fill="#6E473B" font-family="Inter" font-size="8" text-anchor="middle" opacity="0.5">WRENCH</text>
+          </g>
+
+          <!-- Gear icon (center) -->
+          <g transform="translate(450,180)">
+            <circle cx="0" cy="0" r="32" fill="none" stroke="#6E473B" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <!-- Gear teeth -->
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(0)"/>
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(45)"/>
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(90)"/>
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(135)"/>
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(180)"/>
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(225)"/>
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(270)"/>
+            <rect x="-4" y="-38" width="8" height="10" fill="none" stroke="#2F1D0C" stroke-width="2" transform="rotate(315)"/>
+            <circle cx="0" cy="0" r="8" fill="none" stroke="#2F1D0C" stroke-width="1.5"/>
+            <text x="0" y="52" fill="#6E473B" font-family="inter" font-size="8" text-anchor="middle" opacity="0.5">MECHANICAL</text>
+          </g>
+
+          <!-- Checklist icon (right side) -->
+          <g transform="translate(820,140)">
+            <rect x="-28" y="-30" width="56" height="60" fill="none" stroke="#6E473B" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <!-- Check items -->
+            <line x1="-18" y1="-18" x2="-8" y2="-18" stroke="#2F1D0C" stroke-width="2" stroke-linecap="square"/>
+            <line x1="-18" y1="-4" x2="-8" y2="-4" stroke="#2F1D0C" stroke-width="2" stroke-linecap="square"/>
+            <line x1="-18" y1="10" x2="-8" y2="10" stroke="#E3D8C8" stroke-width="1.5" stroke-linecap="square" stroke-dasharray="2 2"/>
+            <line x1="-18" y1="24" x2="-8" y2="24" stroke="#E3D8C8" stroke-width="1.5" stroke-linecap="square" stroke-dasharray="2 2"/>
+            <!-- Pen -->
+            <line x1="8" y1="10" x2="20" y2="-20" stroke="#2F1D0C" stroke-width="1.5" stroke-linecap="round"/>
+            <polygon points="20,-20 24,-26 16,-26" fill="#2F1D0C"/>
+            <text x="0" y="48" fill="#6E473B" font-family="Inter" font-size="8" text-anchor="middle" opacity="0.5">INSPECTION</text>
+          </g>
+
+          <!-- Maintenance worker silhouette (between columns) -->
+          <g transform="translate(315,300)">
+            <circle cx="0" cy="-28" r="8" fill="none" stroke="#2F1D0C" stroke-width="1.5"/>
+            <line x1="0" y1="-20" x2="0" y2="0" stroke="#2F1D0C" stroke-width="1.5"/>
+            <line x1="-10" y1="-12" x2="10" y2="-12" stroke="#2F1D0C" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="-7" y2="16" stroke="#2F1D0C" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="7" y2="16" stroke="#2F1D0C" stroke-width="1.5"/>
+            <!-- Tool box -->
+            <rect x="8" y="-8" width="18" height="12" fill="none" stroke="#6E473B" stroke-width="1.5"/>
+            <line x1="12" y1="-8" x2="12" y2="4" stroke="#6E473B" stroke-width="0.5"/>
+            <line x1="8" y1="-2" x2="26" y2="-2" stroke="#6E473B" stroke-width="0.5"/>
+          </g>
+
+          <!-- Small gear (top right) -->
+          <g transform="translate(670,100)">
+            <circle cx="0" cy="0" r="18" fill="none" stroke="#6E473B" stroke-width="1" stroke-dasharray="3 2"/>
+            <rect x="-3" y="-22" width="6" height="6" fill="none" stroke="#2F1D0C" stroke-width="1.5" transform="rotate(0)"/>
+            <rect x="-3" y="-22" width="6" height="6" fill="none" stroke="#2F1D0C" stroke-width="1.5" transform="rotate(60)"/>
+            <rect x="-3" y="-22" width="6" height="6" fill="none" stroke="#2F1D0C" stroke-width="1.5" transform="rotate(120)"/>
+            <rect x="-3" y="-22" width="6" height="6" fill="none" stroke="#2F1D0C" stroke-width="1.5" transform="rotate(180)"/>
+            <rect x="-3" y="-22" width="6" height="6" fill="none" stroke="#2F1D0C" stroke-width="1.5" transform="rotate(240)"/>
+            <rect x="-3" y="-22" width="6" height="6" fill="none" stroke="#2F1D0C" stroke-width="1.5" transform="300)"/>
+            <circle cx="0" cy="0" r="5" fill="none" stroke="#2F1D0C" stroke-width="1"/>
+          </g>
+
+          <!-- Corner brackets -->
+          <path d="M10 10 L10 2 L18 2" fill="none" stroke="#6E473B" stroke-width="1.5"/>
+          <path d="M890 10 L890 2 L882 2" fill="none" stroke="#6E473B" stroke-width="1.5"/>
+          <path d="M10 330 L10 338 L18 338" fill="none" stroke="#6E473B" stroke-width="1.5"/>
+          <path d="M890 330 L890 338 L882 338" fill="none" stroke="#6E473B" stroke-width="1.5"/>
+
+          <!-- Label -->
+          <text x="450" y="328" fill="#6E473B" font-family="Inter" font-size="10" letter-spacing="4" text-anchor="middle" opacity="0.35">FACILITY MAINTENANCE</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INFO CARDS ===================== -->
+  <section class="py-20 lg:py-24 bg-white geo-grid">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-14 reveal">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <div style="width:48px;height:2px;background:#6E473B"></div>
+          <div class="diamond diamond-sm"></div>
+          <div style="width:48px;height:2px;background:#6E473B"></div>
+        </div>
+        <h2 class="text-3xl lg:text-4xl font-black text-primary mb-3">خدماتنا في الصيانة</h2>
+        <p class="text-secondary text-sm max-w-md mx-auto">حلول صيانة شاملة تغطي جميع احتياجات المنشآت.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="icon-card p-6 flex items-start gap-4 reveal stagger-1">
+          <div class="ic-wrap w-12 h-12 border-2 border-secondary/25 flex items-center justify-center flex-shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 9l3 3"/><path d="M15 9l-3 3"/></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-primary text-base mb-1">صيانة وقائية</h3>
+            <p class="text-secondary/60 text-sm leading-relaxed">خططط دورية وفحوص منتظمة لمنع الأعطال قبل حدوثها.</p>
+          </div>
+        </div>
+        <div class="icon-card p-6 flex items-start gap-4 reveal stagger-2">
+          <div class="ic-wrap w-12 h-12 border-2 border-secondary/25 flex items-center justify-center flex-shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-primary text-base mb-1">صيانة تصحيحية</h3>
+            <p class="textseset-secondary/60 text-sm leading-relaxed">إصلاح الأعطال والخلل فوراً بفرق فنية متخصصة.</p>
+          </div>
+        </div>
+        <div class="icon-card p-6 flex items-start gap-4 reveal stagger-3">
+          <div class="ic-wrap w-12 h-12 border-2 border-secondary/25 flex items-center justify-center flex-shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-primary text-base mb-1">فرق فنية متخصصة</h3>
+            <p class="text-secondary/60 text-sm leading-relaxed">مهندسون وفنيون مؤهلون لكل تخصص من تخصصات الصيانة.</p>
+          </div>
+        </div>
+        <div class="icon-card p-6 flex items-start gap-4 reveal stagger-4">
+          <div class="ic-wrap w-12 h-12 border-2 border-secondary/25 flex items-center justify-center flex-shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-primary text-base mb-1">استجابة سريعة</h3>
+            <p class="text-secondary/60 text-sm leading-relaxed">فرق طوارئ تعمل على مدار الساعة في جميع المدن.</p>
+          </div>
+        </div>
+        <!-- Highlight card -->
+        <div class="icon-card p-6 flex items-start gap-4 border-secondary/15 bg-secondary/[0.03] sm:col-span-2 lg:col-span-2 reveal stagger-5">
+          <div class="ic-wrap w-12 h-12 bg-secondary/10 border-2 border-secondary flex items-center justify-center flex-shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><rect x="3" y="3" width="18" height="18" rx="0"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+          </div>
+          <div>
+            <h3 class="font-bold text-primary text-base mb-1">جاري تحديث المشاريع</h3>
+            <p class="text-secondary/60 text-sm leading-relaxed max-w-md">نعمل على توثيق أكثر من 50 مشروع صيانة تم تنفيذها في جدة والرياض والدمام وغيرها، وسيتم نشرها مع تفاصيل فنية كاملة قريباً.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY — Single Card Style ===================== -->
+  <section class="py-20 lg:py-28 bg-bg geo-diagonal">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="max-w-3xl mx-auto reveal">
+        <div class="flex items-center justify-center gap-3 mb-6">
+          <div style="width:48px;height:2px;background:#6E473B"></div>
+          <div class="diamond diamond-sm"></div>
+          <div style="width:48px;height:2px;background:#6E473B"></div>
+        </div>
+        <h2 class="text-3xl lg:text-4xl font-black text-primary mb-10 text-center">لماذا لا تظهر المشاريع بعد؟</h2>
+
+        <!-- Single prominent card -->
+        <div class="bg-white border border-primary/8 p-8 lg:p-10 relative">
+          <div class="absolute top-0 right-0 w-20 h-1 bg-secondary"></div>
+          <div class="absolute bottom-0 left-0 w-20 h-1 bg-secondary"></div>
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-10 h-10 bg-secondary/10 border-2 border-secondary flex items-center justify-center flex-shrink-0 mt-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="12" x2="16" y2="14"/></svg>
+            </div>
+            <div>
+              <span class="text-secondary/40 text-xs font-en tracking-wider">THE REASON</span>
+            <h3 class="text-primary font-bold text-base mt-0.5">طبيعة أعمال الصيانة</h3>
+            </div>
+          </div>
+          <div class="space-y-5 text-secondary/80 text-[15px] leading-[1.9]">
+            <p>
+              أعمال الصيانة تتم <strong class="text-primary">داخل مواقع العملاء</strong> — في المكاتب والمصانع والمنشآت السكنية — وهذا يجعل تصويرها وتوثيقها أكثر تحدياً من مشاريع البناء التي تُنفذ في مواقع مفتوحة.
+            </p>
+            <p>
+              نحن نعمل الآن على <strong class="text-primary">جمع المالكين للحصول على إذونات التصوير</strong>، وتجميع التقارير الفنية وبيانات الصيانة المنجزة لإعداد معرض يعكس خبرتنا الفعلية في هذا المجال.
+            </p>
+            <p>
+              هذا النهج يضمن أن المحتوى الذي سنقدمه سيكون <strong class="text-primary">مفصلاً وذا مصداقية فنية</strong> — وليس مجرد صور عامة لا تُظهر الجودة الحقيقية للعمل.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="py-24 lg:py-32 bg-primary relative overflow-hidden" style="clip-path:polygon(0 8%,100% 0,100% 100%,0 100%)">
+    <div class="absolute inset-0 geo-blocks opacity-12"></div>
+    <div class="absolute top-12 right-16 w-20 h-20 bracket-tr hidden lg:block" style="border-color:rgba(227,216,200,0.15)"></div>
+    <div class="absolute bottom-12 left-16 w-20 h-20 bracket-bl hidden lg:block" style="border-color:rgba(227,216,200,0.15)"></div>
+
+    <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center relative z-10 reveal">
+      <div class="diamond diamond-sm diamond-white mx-auto mb-6"></div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">هل تحتاج إلى خدمات صيانة احترافية؟</h2>
+      <p class="text-light/60 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+        فرقنا الفنية جاهزة للوصول إلى موقعك في أسرع وقت ممكن — مع تشخيص دقيق للمشكلة وتقديم الحل الأمثل.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button onclick="openQuoteModal()" class="bg-white text-primary font-bold text-base px-10 py-4 hover:bg-light transition-colors duration-200">اطلب عرض سعر</button>
+        <a href="https://wa.me/966505532135" target="_blank" rel="noopener" class="border-2 border-white text-white font-bold text-base px-10 py-4 hover:bg-white hover:text-primary transition-all duration-200 flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.329 0-4.508-.715-6.307-1.937l-.44-.294-2.642.886.886-2.642-.294-.44A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          <span>تواصل عبر واتساب</span>
+        </a>
+        <a href="tel:+966505532135" class="border-2 border-white/30 text-white font-bold text-base px-10 py-4 hover:border-white hover:bg-white/10 transition-all duration-200 flex items-center gap-2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>اتصل بنا</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BACK TO SERVICES ===================== -->
+  <section class="py-16 lg:py-20 bg-bg">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 reveal">
+        <div>
+          <h3 class="text-xl font-bold text-primary mb-1">استعرض جميع الخدمات</h3>
+          <p class="text-secondary/60 text-sm">اكتشف باقي خدماتنا المتكاملة في قطاع المقاولات والبناء.</p>
+        </div>
+        <a href="../Services.html" class="inline-flex items-center gap-2 bg-primary text-white font-bold text-sm px-8 py-3.5 hover:bg-secondary transition-colors duration-200 flex-shrink-0 group">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="rotate-180"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          <span>العودة إلى صفحة الخدمات</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-8 reveal stagger-2">
+        <a href="../General-contracting-services/General-contracting.html" class="bg-white border border-primary/8 p-4 text-center hover:border-secondary/20 hover:shadow-md transition-all duration-200 group">
+          <div class="w-10 h-10 border-2 border-secondary/30 flex items-center justify-center mx-auto mb-3 group-hover:border-secondary transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><rect x="1" y="6" width="22" height="16" rx="0"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>
+          </div>
+          <span class="text-primary text-xs font-bold">المقاولات العامة</span>
+        </a>
+        <a href="../Villa-service/Villa.html" class="bg-white border border-primary/8 p-4 text-center hover:border-secondary/20 hover:shadow-md transition-all duration-200 group">
+          <div class="w-10 h-10 border-2 border-secondary/30 flex items-center justify-center mx-auto mb-3 group-hover:border-secondary transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span class="text-primary text-xs font-bold">بناء الفلل</span>
+        </a>
+        <a href="../Restoration-service/Restoration.html" class="bg-white border border-primary/8 p-4 text-center hover:border-secondary/20 hover:shadow-md transition-all duration-200 group">
+          <div class="w-10 h-10 border-2 border-secondary/30 flex items-center justify-center mx-auto mb-3 group-hover:border-secondary transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <span class="text-primary text-xs font-bold">الترميم</span>
+        </a>
+        <a href="../Finishing-service/Finishing.html" class="bg-white border border-primary/8 p-4 text-center hover:border-secondary/20 hover:shadow-md transition-all duration-200 group">
+          <div class="w-10 h-10 border-2 border-secondary/30 flex items-center justify-center mx-auto mb-3 group-hover:border-secondary transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><rect x="2" y="3" width="20" height="14" rx="0"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <span class="text-primary text-xs font-bold">التشطيبات</span>
+        </a>
+        <a href="../Maintenance-service/Maintenance.html" class="bg-secondary/5 border-2 border-secondary/30 p-4 text-center">
+          <div class="w-10 h-10 bg-secondary/10 border-2 border-secondary flex items-center justify-center mx-auto mb-3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <span class="text-primary text-xs font-bold">الصيانة</span>
+          <div class="text-secondary text-[10px] mt-1">الصفحة الحالية</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-primary pt-16 pb-8">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-light/10">
+        <div>
+          <a href="index.html" class="flex items-center gap-3 mb-6">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="2" y="18" width="10" height="20" fill="#E3D8C8"/><rect x="15" y="10" width="10" height="28" fill="#E3D8C8" opacity="0.6"/><polygon points="25,10 38,10 31.5,2" fill="#E3D8C8"/><rect x="28" y="18" width="10" height="20" fill="#E3D8C8" opacity="0.4"/></svg>
+            <div>
+              <div class="text-light font-bold text-sm leading-tight">مؤسسة حامد درويش</div>
+              <div class="text-light font-bold text-sm leading-tight">الخميسي</div>
+            </div>
+          </a>
+          <p class="text-light/50 text-sm leading-relaxed">مؤسسة رائدة في تقديم الحلول الهندسية والاستشارية على مستوى المملكة العربية السعودية منذ 1996.</p>
+        </div>
+        <div>
+          <h3 class="text-light font-bold text-sm mb-6">روابط سريعة</h3>
+          <ul class="space-y-3">
+            <li><a href="/index.html" class="text-light/50 text-sm hover:text-light transition-colors">الرئيسية</a></li>
+            <li><a href="/About/About.html" class="text-light/50 text-sm hover:text-light transition-colors">من نحن</a></li>
+            <li><a href="/services/Services.html" class="text-light/50 text-sm hover:text-light transition-colors">الخدمات</a></li>
+            <li><a href="/Projects/Projects.html" class="text-light/50 text-sm hover:text-light transition-colors">المشاريع</a></li>
+            <li><a href="/Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors">المقلات</a></li>
+            <li><a href="/Faq/Faq.html" class="text-light/50 text-sm hover:text-light transition-colors">الأسئلة الشائعة</a></li>
+            <li><a href="/Contact/Contact.html" class="text-light/50 text-sm hover:text-light transition-colors">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-light font-bold text-sm mb-6">الخدمات</h3>
+          <ul class="space-y-3">
+            <li><a href="../General-contracting-services/General-contracting.html" class="text-light/50 text-sm hover:text-light transition-colors">المقاولات العامة</a></li>
+            <li><a href="../Villa-service/Villa.html" class="text-light/50 text-sm hover:text-light transition-colors">بناء الفلل</a></li>
+            <li><a href="../Restoration-service/Restoration.html" class="text-light/50 text-sm hover:text-light transition-colors">الترميم</a></li>
+            <li><a href="../Finishing-service/Finishing.html" class="text-light/50 text-sm hover:text-light transition-colors">التشطيبات</a></li>
+            <li><a href="../Maintenance-service/Maintenance.html" class="text-light text-sm">الصيانة</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-light font-bold text-sm mb-6">تواصل معنا</h3>
+          <ul class="space-y-3" style="direction: ltr; text-align: right;">
+            <li class="text-light/50 text-sm font-en" dir="ltr">+966 50 553 2135</li>
+            <li class="text-light/50 text-sm font-en" dir="ltr">info@hamedgco.com</li>
+            <li class="text-light/50 text-sm">جدة، المملكة العربية السعودية</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between pt-8 gap-4">
+        <p class="text-light/30 text-xs font-ar"> جميع الحقوق محفوظة  لمؤسسة حامد درويش الخميسي © 2026</p>
+        <p class="text-light/30 text-xs font-ar"> تم تصميم وتطوير هذا الموقع بواسطة <a href="https://asadroot.com/">أسد روت (Asad Root).</a> </p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-light/30 text-xs hover:text-light/60 transition-colors">سياسة الخصوصية</a>
+          <a href="#" class="text-light/30 text-xs hover:text-light/60 transition-colors">الشروط والأحكام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/966505532135" target="_blank" rel="noopener" class="wa-float" aria-label="تواصل عبر واتساب">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.329 0-4.508-.715-6.307-1.937l-.44-.294-2.642.886.886-2.642-.294-.44A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+  </a>
+
+  <button id="backTop" class="back-top" onclick="window.scrollTo({top:0})" aria-label="العودة للأعلى">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Quote Modal -->
+  <div id="quoteModal" class="fixed inset-0 z-[200] flex items-center justify-center p-4 hidden">
+    <div class="absolute inset-0 bg-primary/60 backdrop-filter:blur-sm" onclick="closeQuoteModal()"></div>
+    <div id="modalInner" class="relative bg-bg w-full max-w-2xl max-h-[90vh] overflow-y-auto p-8 lg:p-10" style="transform:translateY(20px);transition:transform .3s ease">
+      <button onclick="closeQuoteModal()" class="absolute top-4 left-4 w-10 h-10 flex items-center justify-center text-secondary hover:text-primary transition-colors" aria-label="إغلاق">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="flex items-center gap-3 mb-2">
+        <div class="diamond diamond-sm"></div>
+        <span class="text-secondary text-sm font-en tracking-wider">GET A QUOTE</span>
+      </div>
+      <h2 class="text-2xl font-black text-primary mb-2">طلب عرض سعر — صيانة</h2>
+      <p class="text-secondary/60 text-sm mb-8">أملأ النموذج وسيتواصل معك فريقنا خلال ساعات عمل.</p>
+      <form id="quoteForm" class="space-y-5" onsubmit="handleQuoteForm(event)">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div><label class="block text-primary text-sm font-medium mb-2">الاسم الكامل *</label><input type="text" class="w-full p-3 border border-primary/15 bg-bg text-primary text-[15px] font-ar outline-none focus:border-secondary transition-colors" placeholder="أدخل اسمك" required></div>
+          <div><label class="block text-primary text-sm font-medium mb-2">رقم الجوال *</label><input type="tel" class="w-full p-3 border border-primary/15 bg-bg text-primary text-[15px] font-en outline-none focus:border-secondary transition-colors" placeholder="05XXXXXXXX" dir="ltr" required></div>
+        </div>
+        <div><label class="block text-primary text-sm font-medium mb-2">البريد الإلكتروني</label><input type="email" class="w-full p-3 border border-primary/15 bg-bg text-primary text-[15px] font-en outline-none focus:border-secondary transition-colors" placeholder="example@email.com" dir="ltr"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div><label class="block text-primary text-sm font-medium mb-2">المدينة *</label><select class="w-full p-3 border border-primary/15 bg-bg text-primary text-[15px] font-ar outline-none focus:border-secondary transition-colors" required><option value="">اختر المدينة</option><option>جدة</option><option>الرياض</option>مكة المكرمة</option>المدينة المنورة</option>الدمام</option>الخبر</option>أخرى</select></div>
+          <div><label class="block text-primary text-sm font-medium mb-2">نوع الصيانة *</label><select class="w-full p-3 border border-primary/15 bg-bg text-primary text-[15px] font-ar outline-none focus:border-secondary transition-colors" required><option value="">اختر النوع</option><option>صيانة عامة</option>صيانة كهربائية</option>صيانة سباكة</option>صيانة أنظمة</option>صيانة واجهات</option>أخرى</select></div>
+        </div>
+        <div><label class="block text-primary text-sm font-medium mb-2">وصف المشكلة واحتياجات الصيانة</label><textarea class="w-full p-3 border border-primary/15 bg-bg text-primary text-[15px] font-ar outline-none focus:border-secondary transition-colors h-28 resize-none" placeholder="اكتب وصفاً للمبنى ونوع الصيانة المطلوبة وأي مشاكل تواجهها..."></textarea></div>
+        <div><label class="block text-primary text-sm font-medium mb-2">مستوى الاستعجال</label>
+          <div class="flex gap-3">
+            <label class="flex items-center gap-2 cursor-pointer text-primary/70 text-sm hover:text-primary transition-colors"><input type="radio" name="urgency" value="عاجل" checked class="w-4 h-4 accent-secondary"><span>عاجل</span></label>
+            <label class="flex items-center gap-2 cursor-pointer text-primary/70 text-sm hover:text-primary transition-colors"><input type="radio" name="urgency" value="متوسط" class="w-4 h-4 accent-secondary"><span>متوسط</span></label>
+            <label class="flex items-center gap-2 cursor-pointer text-primary/70 text-sm hover:text-primary transition-colors"><input type="radio" name="urgency" value="ليس عاجل" class="w-4 h-4 accent-secondary"><span>ليس عاجل</span></label>
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-primary text-white font-bold text-base py-4 hover:bg-secondary transition-colors duration-200">إرسال طلب عرض السعر</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('loader').classList.add('hidden')},500)});
+    const navbar=document.getElementById('navbar'),backTop=document.getElementById('backTop');
+    window.addEventListener('scroll',()=>{navbar.classList.toggle('nav-scrolled',window.scrollY>60);backTop.classList.toggle('visible',window.scrollY>500)},{passive:true});
+    function toggleMobile(){document.getElementById('mobileMenu').classList.toggle('open');document.querySelector('.hamburger').classList.toggle('active');document.body.style.overflow=document.getElementById('mobileMenu').classList.contains('open')?'hidden':''}
+    function closeMobile(){document.getElementById('mobileMenu').classList.remove('open');document.querySelector('.hamburger').classList.remove('active');document.body.style.overflow=''}
+    function openQuoteModal(){document.getElementById('quoteModal').classList.remove('hidden');document.body.style.overflow='hidden';setTimeout(()=>{document.getElementById('modalInner').style.transform='translateY(0)'},10)}
+    function closeQuoteModal(){document.getElementById('quoteModal').classList.add('hidden');document.body.style.overflow='';document.getElementById('modalInner').style.transform='translateY(20px)'}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeQuoteModal()});
+    const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('active')})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal,.reveal-right,.reveal-left,.reveal-scale').forEach(el=>ro.observe(el));
+    function showToast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+    function handleQuoteForm(e){e.preventDefault();closeQuoteModal();showToast('تم إرسال طلب عرض السعر بنجاح! سيتواصل معك فريقنا قريباً.');e.target.reset()}
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-80,behavior:'smooth'})}})});
+  </script>
+</body>
+</html>

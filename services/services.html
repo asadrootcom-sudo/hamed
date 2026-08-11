@@ -6,12 +6,12 @@
   <title>خدماتنا | مؤسسة حامد درويش الخميسي — مقاولات عامة وبناء فلل وترميم وتشطيبات وصيانة</title>
   <meta name="description" content="اكتشف مجموعة خدمات مؤسسة حامد درويش الخميسي المتكاملة: المقاولات العامة، بناء الفلل، الترميم، التشطيبات، والصيانة في جميع مدن المملكة العربية السعودية.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.alkhamisi.sa/services">
+  <link rel="canonical" href="https://hamedgco.com/services/Services.html">
   <meta property="og:title" content="خدماتنا | مؤسسة حامد درويش الخميسي">
   <meta property="og:description" content="مجموعة متكاملة من خدمات المقاولات والبناء بجودة عالية في جميع مدن السعودية.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.alkhamisi.sa/services">
-  <meta property="og:image" content="https://www.alkhamisi.sa/og-services.jpg">
+  <meta property="og:url" content="https://hamedgco.com/services/Services.html">
+  <meta property="og:image" content="https://hamedgco.com/og-services.jpg">
   <meta property="og:locale" content="ar_SA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="خدماتنا | مؤسسة حامد درويش الخميسي">
@@ -22,8 +22,8 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://www.alkhamisi.sa/"},
-      {"@type": "ListItem", "position": 2, "name": "الخدمات", "item": "https://www.alkhamisi.sa/services"}
+      {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://hamedgco.com/"},
+      {"@type": "ListItem", "position": 2, "name": "الخدمات", "item": "https://hamedgco.com/services/Services.html"}
     ]
   }
   </script>
@@ -36,14 +36,14 @@
     "provider": {
       "@type": "Organization",
       "name": "مؤسسة حامد درويش الخميسي",
-      "url": "https://www.alkhamisi.sa"
+      "url": "https://hamedgco.com/services/Services.html"
     },
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "item": {"@type": "Service", "name": "المقاولات العامة", "url": "https://www.alkhamisi.sa/services/general-contracting"}},
-      {"@type": "ListItem", "position": 2, "item": {"@type": "Service", "name": "بناء الفلل", "url": "https://www.alkhamisi.sa/services/villa-construction"}},
-      {"@type": "ListItem", "position": 3, "item": {"@type": "Service", "name": "الترميم", "url": "https://www.alkhamisi.sa/services/restoration"}},
-      {"@type": "ListItem", "position": 4, "item": {"@type": "Service", "name": "التشطيبات", "url": "https://www.alkhamisi.sa/services/finishing"}},
-      {"@type": "ListItem", "position": 5, "item": {"@type": "Service", "name": "الصيانة", "url": "https://www.alkhamisi.sa/services/maintenance"}}
+      {"@type": "ListItem", "position": 1, "item": {"@type": "Service", "name": "المقاولات العامة", "url": "https://hamedgco.com/services/General-contracting-services/General-contracting.html"}},
+      {"@type": "ListItem", "position": 2, "item": {"@type": "Service", "name": "بناء الفلل", "url": "https://hamedgco.com/services/Villa-service/Villa.html"}},
+      {"@type": "ListItem", "position": 3, "item": {"@type": "Service", "name": "الترميم", "url": "https://hamedgco.com/services/Restoration-service/Restoration.html"}},
+      {"@type": "ListItem", "position": 4, "item": {"@type": "Service", "name": "التشطيبات", "url": "https://hamedgco.com/services/Finishing-service/Finishing.html"}},
+      {"@type": "ListItem", "position": 5, "item": {"@type": "Service", "name": "الصيانة", "url": "https://hamedgco.com/services/Maintenance-service/Maintenance.html"}}
     ]
   }
   </script>
@@ -53,6 +53,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- استدعاء ملفات Swiper الرسمية فقط -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script>
     tailwind.config = {
       theme: {
@@ -168,6 +170,61 @@
     .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal,.reveal-right,.reveal-left,.reveal-scale{opacity:1;transform:none}}.hero-bg { transition: transform 0.1s linear; }
+
+     /* ========================================= */
+    /* كود السلايدر المدمج) */
+    /* ========================================= */
+    .fp-section { padding: 80px 0 100px; background-color: #FAF7F2; position: relative; overflow: hidden; }
+    @media(min-width:1024px) { .fp-section { padding: 120px 0 140px; } }
+    
+    .fp-swiper { width: 100%; padding-bottom: 50px; }
+    .fp-swiper .swiper-wrapper { align-items: stretch; }
+    .fp-swiper .swiper-slide { height: auto; }
+
+    .fp-card { background: #fff; height: 500px; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 4px 20px rgba(47, 29, 12, 0.04); transition: transform 0.5s ease, box-shadow 0.5s ease; }
+    .fp-card:hover { transform: translateY(-10px); box-shadow: 0 24px 48px rgba(47, 29, 12, 0.12); }
+
+    .fp-img-wrap { position: relative; height: 60%; width: 100%; overflow: hidden; flex-shrink: 0; }
+    .fp-img-wrap img { width: 100%; height: 100%; object-fit: cover; filter: sepia(8%) saturate(85%) brightness(97%) contrast(105%); transition: filter 0.7s ease, transform 0.7s ease; }
+    .fp-card:hover .fp-img-wrap img { filter: none; transform: scale(1.08); }
+    
+    .fp-img-overlay { position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to top, rgba(0,0,0,0.1), transparent); pointer-events: none; }
+    
+    .fp-badge { position: absolute; top: 16px; right: 16px; padding: 6px 16px; font-size: 12px; font-weight: 700; z-index: 2; border-radius: 50px; backdrop-filter: blur(4px); }
+    .fp-badge--done { background-color: #2F1D0C; color: #fff; }
+    .fp-badge--wip { background-color: rgba(227, 216, 200, 0.9); color: #2F1D0C; }
+
+    .fp-content { height: 40%; padding: 20px 24px 24px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
+    .fp-title { font-size: 18px; font-weight: 800; color: #2F1D0C; margin: 0 0 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    
+    .fp-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+    .fp-meta-item { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: #6E473B; font-weight: 500; opacity: 0.8; }
+    .fp-meta-item svg { width: 12px; height: 12px; stroke: #6E473B; }
+    
+    .fp-progress-wrap { display: flex; flex-direction: column; gap: 6px; }
+    .fp-progress-info { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+    .fp-progress-status { font-weight: 700; color: #2F1D0C; }
+    .fp-progress-val { font-weight: 600; color: #6E473B; font-family: 'Inter', sans-serif; direction: ltr; }
+    
+    .fp-progress-track { width: 100%; height: 4px; background-color: rgba(47, 29, 12, 0.08); border-radius: 50px; overflow: hidden; }
+    .fp-progress-bar { height: 100%; background-color: #2F1D0C; width: 0; border-radius: 50px; transition: width 1.2s ease; }
+    .fp-progress-bar--wip { background-color: #E3D8C8; }
+
+    .fp-link { display: inline-flex; align-items: center; gap: 6px; color: #6E473B; font-size: 13px; font-weight: 700; text-decoration: none; transition: color 0.3s ease, gap 0.3s ease; margin-top: auto; }
+    .fp-link svg { transition: transform 0.3s ease; }
+    .fp-card:hover .fp-link { color: #2F1D0C; gap: 10px; }
+    .fp-card:hover .fp-link svg { transform: translateX(-4px); }
+
+    .fp-nav { position: absolute; top: 45%; left: 0; right: 0; transform: translateY(-50%); display: none; justify-content: space-between; z-index: 20; padding: 0 10px; pointer-events: none; }
+    @media(min-width:1200px) { .fp-nav { display: flex; } }
+    .fp-nav-btn { width: 50px; height: 50px; background: rgba(255,255,255,0.9); border: 1px solid rgba(47,29,12,0.1); color: #2F1D0C; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 50%; box-shadow: 0 8px 24px rgba(47,29,12,0.08); transition: all 0.3s ease; pointer-events: auto; }
+    .fp-nav-btn:hover { background: #2F1D0C; color: #fff; }
+
+    .fp-swiper .swiper-pagination-bullet { width: 10px; height: 10px; background-color: #6E473B; opacity: 0.3; transform: rotate(45deg); margin: 0 8px !important; transition: all 0.3s ease; cursor: pointer; }
+    .fp-swiper .swiper-pagination-bullet-active { opacity: 1; background-color: #2F1D0C; transform: rotate(45deg) scale(1.2); }
+
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } .reveal { opacity: 1; transform: none; } }
+ 
   </style>
 </head>
 <body class="font-ar">
@@ -180,7 +237,7 @@
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
     <div class="max-w-8xl mx-auto px-6 lg:px-10">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center gap-3 flex-shrink-0" aria-label="الرئيسية">
+        <a href="../index.html" class="flex items-center gap-3 flex-shrink-0" aria-label="الرئيسية">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="flex-shrink-0">
             <rect x="2" y="18" width="10" height="20" fill="#2F1D0C"/>
             <rect x="15" y="10" width="10" height="28" fill="#6E473B"/>
@@ -194,11 +251,12 @@
         </a>
         <div class="hidden lg:flex items-center gap-8">
           <a href="../index.html" class="nav-link text-primary text-sm font-medium">الرئيسية</a>
-          <a href="../about/about.html" class="nav-link text-primary text-sm font-medium">من نحن</a>
-          <a href="../services/services.html" class="nav-link active text-primary text-sm font-medium">الخدمات</a>
-          <a href="../projects.html" class="nav-link text-primary text-sm font-medium">المشاريع</a>
-          <a href="../faq.html" class="nav-link text-primary text-sm font-medium">الأسئلة الشائعة</a>
-          <a href="../contact.html" class="nav-link text-primary text-sm font-medium">اتصل بنا</a>
+          <a href="../About/About.html" class="nav-link text-primary text-sm font-medium">من نحن</a>
+          <a href="#" class="nav-link active text-primary text-sm font-medium">الخدمات</a>
+          <a href="../Projects/Projects.html" class="nav-link text-primary text-sm font-medium">المشاريع</a>
+          <a href="../Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقلات </a>
+          <a href="../Faq/Faq.html" class="nav-link text-primary text-sm font-medium">الأسئلة الشائعة</a>
+          <a href="../Contact/Contact.html" class="nav-link text-primary text-sm font-medium">اتصل بنا</a>
         </div>
         <div class="flex items-center gap-4">
           <button onclick="openQuoteModal()" class="hidden md:inline-flex items-center gap-2 bg-primary text-white text-sm font-medium px-6 py-2.5 hover:bg-secondary transition-colors duration-200">اطلب عرض سعر</button>
@@ -211,11 +269,12 @@
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="mobile-menu">
     <a href="../index.html" onclick="closeMobile()">الرئيسية</a>
-    <a href="../about/about.html" onclick="closeMobile()">من نحن</a>
-    <a href="../services/services.html" onclick="closeMobile()">الخدمات</a>
-    <a href="../projects.html" onclick="closeMobile()">المشاريع</a>
-    <a href="../faq.html" onclick="closeMobile()">الأسئلة الشائعة</a>
-    <a href="../contact.html" onclick="closeMobile()">اتصل بنا</a>
+    <a href="../About/About.html" onclick="closeMobile()">من نحن</a>
+    <a href="../services/Services.html" onclick="closeMobile()">الخدمات</a>
+    <a href="../Projects/Projects.html" onclick="closeMobile()">المشاريع</a>
+    <a href="../Articles/Articles.html" onclick="closeMobile()">المقلات</a>
+    <a href="../Faq/Faq.html" onclick="closeMobile()">الأسئلة الشائعة</a>
+    <a href="../Contact/Contact.html" onclick="closeMobile()">اتصل بنا</a>
     <button onclick="closeMobile();openQuoteModal()" class="mt-6 bg-primary text-white text-lg font-medium px-10 py-3">اطلب عرض سعر</button>
   </div>
 
@@ -223,15 +282,15 @@
   <section class="relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
     <div class="absolute inset-0">
       <img src="https://media.istockphoto.com/id/949747988/photo/modern-building-construction.jpg?s=170667a&w=0&k=20&c=IK_6D_aIKPCnzhwA-IIZa1NBlwanOG1gMvbp5sI1D3s=" alt="خدمات المقاولات" class="hero-bg w-full h-full object-cover brand-img" style="transform:scale(1.05)" loading="eager">
-      <div class="absolute inset-0 bg-primary/72"></div>
+      <div class="absolute inset-0 bg-primary/60"></div>
       <div class="absolute inset-0 geo-diagonal opacity-30"></div>
     </div>
     <div class="absolute top-28 right-8 lg:right-16 w-16 h-16 bracket-tr hidden md:block"></div>
     <div class="absolute bottom-8 left-8 lg:left-16 w-16 h-16 bracket-bl hidden md:block"></div>
     <div class="relative z-10 max-w-8xl mx-auto px-6 lg:px-10">
       <nav aria-label="التنقل التفصيلي" class="flex items-center gap-2 text-sm mb-8 reveal">
-        <a href="index.html" class="text-light/50 hover:text-light transition-colors">الرئيسية</a>
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="text-light/30 rotate-180"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <a href="../index.html" class="text-light/50 hover:text-light transition-colors">الرئيسية</a>
+        <span class="text-secondary/50 text-primary transition-colors"> ↚ </span>
         <span class="text-light font-medium">الخدمات</span>
       </nav>
       <div class="max-w-3xl">
@@ -284,8 +343,8 @@
       <!-- Row 1: 2 Large Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 mb-4 lg:mb-5">
         <!-- المقاولات العامة -->
-        <a href="services/general-contracting.html" class="svc-card aspect-[4/3] lg:aspect-[16/10] reveal-scale stagger-1">
-          <img src="https://picsum.photos/seed/general-contract-crane/900/560" alt="خدمات المقاولات العامة" class="w-full h-full object-cover brand-img" loading="lazy">
+        <a href="General-contracting-services/General-contracting.html" class="svc-card aspect-[4/3] lg:aspect-[16/10] reveal-scale stagger-1">
+          <img src="https://www.enshaa.net/images/b1(10).jpg" alt="خدمات المقاولات العامة" class="w-full h-full object-cover brand-img" loading="lazy">
           <div class="svc-overlay">
             <div class="flex items-center gap-2 mb-3 svc-tag">
               <div class="diamond diamond-sm diamond-white"></div>
@@ -302,8 +361,8 @@
           </div>
         </a>
         <!-- بناء الفلل -->
-        <a href="services/villa-construction.html" class="svc-card aspect-[4/3] lg:aspect-[16/10] reveal-scale stagger-2">
-          <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="خدمة بناء الفلل" class="w-full h-full object-cover brand-img" loading="lazy">
+        <a href="Villa-service/Villa.html" class="svc-card aspect-[4/3] lg:aspect-[16/10] reveal-scale stagger-2">
+          <img src="https://moonconstruction.so/wp-content/uploads/2022/10/06-1.jpg" alt="خدمة بناء الفلل" class="w-full h-full object-cover brand-img" loading="lazy">
           <div class="svc-overlay">
             <div class="flex items-center gap-2 mb-3 svc-tag">
               <div class="diamond diamond-sm diamond-white"></div>
@@ -324,8 +383,8 @@
       <!-- Row 2: 3 Medium Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
         <!-- الترميم -->
-        <a href="services/restoration.html" class="svc-card aspect-[4/3] reveal-scale stagger-3">
-          <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="خدمة الترميم وإعادة التأهيل" class="w-full h-full object-cover brand-img" loading="lazy">
+        <a href="Restoration-service/Restoration.html" class="svc-card aspect-[4/3] reveal-scale stagger-3">
+          <img src="https://media.istockphoto.com/id/1404008127/photo/teamwork-makes-the-dream-work.jpg?s=612x612&w=0&k=20&c=KcmS_H5jfLiu9nhdCOW0L63jpnvrDcIdC5Mw257meU4=" alt="خدمة الترميم وإعادة التأهيل" class="w-full h-full object-cover brand-img" loading="lazy">
           <div class="svc-overlay">
             <div class="flex items-center gap-2 mb-2 svc-tag">
               <div class="diamond diamond-sm diamond-white"></div>
@@ -342,8 +401,8 @@
           </div>
         </a>
         <!-- التشطيبات -->
-        <a href="services/finishing.html" class="svc-card aspect-[4/3] reveal-scale stagger-4">
-          <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="خدمة التشطيبات الداخلية والخارجية" class="w-full h-full object-cover brand-img" loading="lazy">
+        <a href="Finishing-service/Finishing.html" class="svc-card aspect-[4/3] reveal-scale stagger-4">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.R7g_hwgDByJwC7TOhIDkkAHaFa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="خدمة التشطيبات الداخلية والخارجية" class="w-full h-full object-cover brand-img" loading="lazy">
           <div class="svc-overlay">
             <div class="flex items-center gap-2 mb-2 svc-tag">
               <div class="diamond diamond-sm diamond-white"></div>
@@ -360,8 +419,8 @@
           </div>
         </a>
         <!-- الصيانة -->
-        <a href="services/maintenance.html" class="svc-card aspect-[4/3] sm:col-span-2 lg:col-span-1 reveal-scale stagger-5">
-          <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="خدمة الصيانة العامة للمباني" class="w-full h-full object-cover brand-img" loading="lazy">
+        <a href="Maintenance-service/Maintenance.html" class="svc-card aspect-[4/3] sm:col-span-2 lg:col-span-1 reveal-scale stagger-5">
+          <img src="https://masaralremal.com/wp-content/uploads/2021/08/%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84.jpg" alt="خدمة الصيانة العامة للمباني" class="w-full h-full object-cover brand-img" loading="lazy">
           <div class="svc-overlay">
             <div class="flex items-center gap-2 mb-2 svc-tag">
               <div class="diamond diamond-sm diamond-white"></div>
@@ -495,7 +554,7 @@
         </div>
         <!-- Connector (hidden on mobile) -->
         <div class="hidden lg:flex items-center justify-center -mx-1.5 reveal proc-conn">
-          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M0 6h28M24 2l4 4-4 4"/></svg>
+          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M28 6H2"/><path d="M6 2L2 6L6 10"/></svg>
         </div>
         <!-- Step 2 -->
         <div class="proc-card bg-white p-6 text-center reveal stagger-2">
@@ -507,7 +566,7 @@
         </div>
         <!-- Connector -->
         <div class="hidden lg:flex items-center justify-center -mx-1.5 reveal proc-conn">
-          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M0 6h28M24 2l4 4-4 4"/></svg>
+          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M28 6H2"/><path d="M6 2L2 6L6 10"/></svg>
         </div>
         <!-- Step 3 -->
         <div class="proc-card bg-white p-6 text-center reveal stagger-3">
@@ -519,7 +578,7 @@
         </div>
         <!-- Connector -->
         <div class="hidden lg:flex items-center justify-center -mx-1.5 reveal proc-conn">
-          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M0 6h28M24 2l4 4-4 4"/></svg>
+          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M28 6H2"/><path d="M6 2L2 6L6 10"/></svg>
         </div>
         <!-- Step 4 (wraps to new line on lg) -->
       </div>
@@ -533,7 +592,7 @@
           <h3 class="font-bold text-primary text-sm">عرض السعر</h3>
         </div>
         <div class="hidden lg:flex items-center justify-center -mx-1.5 reveal proc-conn">
-          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M0 6h28M24 2l4 4-4 4"/></svg>
+         <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M28 6H2"/><path d="M6 2L2 6L6 10"/></svg>
         </div>
         <div class="proc-card bg-white p-6 text-center reveal stagger-5">
           <div class="w-14 h-14 border-2 border-secondary flex items-center justify-center mx-auto mb-4">
@@ -543,7 +602,7 @@
           <h3 class="font-bold text-primary text-sm">بدء التنفيذ</h3>
         </div>
         <div class="hidden lg:flex items-center justify-center -mx-1.5 reveal proc-conn">
-          <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M0 6h28M24 2l4 4-4 4"/></svg>
+         <svg width="32" height="12" viewBox="0 0 32 12" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M28 6H2"/><path d="M6 2L2 6L6 10"/></svg>
         </div>
         <div class="proc-card bg-white p-6 text-center reveal stagger-6">
           <div class="w-14 h-14 border-2 border-primary flex items-center justify-center mx-auto mb-4">
@@ -557,9 +616,12 @@
     </div>
   </section>
 
-  <!-- ===================== RELATED PROJECTS ===================== -->
-  <section class="py-20 lg:py-28 bg-white geo-grid">
-    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+  <!-- ========================================= -->
+  <!-- سكشن المشاريع المدمج بالكامل -->
+  <!-- ========================================= -->
+  <section class="fp-section" id="projects-sec">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 relative z-10">
+      
       <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14 reveal">
         <div>
           <div class="flex items-center gap-3 mb-4">
@@ -568,90 +630,59 @@
           </div>
           <h2 class="text-3xl lg:text-4xl font-black text-primary">مشاريع من خدماتنا</h2>
         </div>
-        <a href="projects.html" class="inline-flex items-center gap-2 text-secondary font-bold text-sm hover:gap-3 transition-all duration-200 flex-shrink-0">
+        <a href="../Projects/Projects.html" class="inline-flex items-center gap-2 text-secondary font-bold text-sm hover:gap-3 transition-all duration-200 flex-shrink-0">
           <span>جميع المشاريع</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
         </a>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <!-- Project 1 -->
-        <a href="projects/riyadh-tower.html" class="proj-mini block bg-bg reveal stagger-1">
-          <div class="overflow-hidden aspect-[4/3]">
-            <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="برج الرياض التجاري — مقاولات عامة" class="w-full h-full object-cover brand-img" loading="lazy">
-          </div>
-          <div class="p-5">
-            <div class="flex items-center gap-2 mb-2">
-              <div class="diamond diamond-sm" style="width:6px;height:6px"></div>
-              <span class="text-secondary/50 text-xs">الرياض</span>
-              <span class="text-primary/10 text-xs">|</span>
-              <span class="text-secondary/50 text-xs">مقاولات عامة</span>
+      <div class="relative">
+        <!-- أسهم التنقل -->
+
+        <div class="swiper fp-swiper">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div class="fp-card">
+                <div class="fp-img-wrap"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop" alt="مشروع عمارة الفروسية"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--done">تم الإنجاز</span></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة الفروسية</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الفروسية</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+              </div>
             </div>
-            <h3 class="font-bold text-primary text-base mb-3">برج الرياض التجاري</h3>
-            <span class="inline-flex items-center gap-1.5 text-secondary text-xs font-bold">
-              <span>عرض المشروع</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-            </span>
-          </div>
-        </a>
-        <!-- Project 2 -->
-        <a href="projects/jeddah-villa.html" class="proj-mini block bg-bg reveal stagger-2">
-          <div class="overflow-hidden aspect-[4/3]">
-            <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="فيلا جدة الفاخرة — بناء فلل" class="w-full h-full object-cover brand-img" loading="lazy">
-          </div>
-          <div class="p-5">
-            <div class="flex items-center gap-2 mb-2">
-              <div class="diamond diamond-sm" style="width:6px;height:6px"></div>
-              <span class="text-secondary/50 text-xs">جدة</span>
-              <span class="text-primary/10 text-xs">|</span>
-              <span class="text-secondary/50 text-xs">بناء فلل</span>
+
+            <div class="swiper-slide">
+              <div class="fp-card">
+                <div class="fp-img-wrap"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1000&auto=format&fit=crop" alt="مشروع عمارة درة العروس"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--done">تم الإنجاز</span></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة درة العروس</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>درة العروس</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+              </div>
             </div>
-            <h3 class="font-bold text-primary text-base mb-3">فيلا جدة الفاخرة</h3>
-            <span class="inline-flex items-center gap-1.5 text-secondary text-xs font-bold">
-              <span>عرض المشروع</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-            </span>
-          </div>
-        </a>
-        <!-- Project 3 -->
-        <a href="projects/makkah-renovation.html" class="proj-mini block bg-bg reveal stagger-3">
-          <div class="overflow-hidden aspect-[4/3]">
-            <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="ترميم فندق مكة — ترميم" class="w-full h-full object-cover brand-img" loading="lazy">
-          </div>
-          <div class="p-5">
-            <div class="flex items-center gap-2 mb-2">
-              <div class="diamond diamond-sm" style="width:6px;height:6px"></div>
-              <span class="text-secondary/50 text-xs">مكة المكرمة</span>
-              <span class="text-primary/10 text-xs">|</span>
-              <span class="text-secondary/50 text-xs">ترميم</span>
+
+            <div class="swiper-slide">
+              <div class="fp-card">
+                <div class="fp-img-wrap"><img src="https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?q=80&w=1000&auto=format&fit=crop" alt="مشروع عمارة حي الرياض"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--done">تم الإنجاز</span></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة حي الرياض</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الرياض</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+              </div>
             </div>
-            <h3 class="font-bold text-primary text-base mb-3">ترميم فندق مكة</h3>
-            <span class="inline-flex items-center gap-1.5 text-secondary text-xs font-bold">
-              <span>عرض المشروع</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-            </span>
-          </div>
-        </a>
-        <!-- Project 4 -->
-        <a href="projects/riyadh-offices.html" class="proj-mini block bg-bg reveal stagger-4">
-          <div class="overflow-hidden aspect-[4/3]">
-            <img src="https://t3.ftcdn.net/jpg/07/17/57/18/360_F_717571892_fFawMHX7BwcWPPRepjSrz4bggkZRCbyI.jpg" alt="تشطيبات مكتبية بالرياض — تشطيبات" class="w-full h-full object-cover brand-img" loading="lazy">
-          </div>
-          <div class="p-5">
-            <div class="flex items-center gap-2 mb-2">
-              <div class="diamond diamond-sm" style="width:6px;height:6px"></div>
-              <span class="text-secondary/50 text-xs">الرياض</span>
-              <span class="text-primary/10 text-xs">|</span>
-              <span class="text-secondary/50 text-xs">تشطيبات</span>
+
+            <div class="swiper-slide">
+              <div class="fp-card">
+                <div class="fp-img-wrap"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop" alt="مشروع عمارة أبحر"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--wip">قيد التنفيذ</span></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة أبحر</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>أبحر</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">قيد التنفيذ</span><span class="fp-progress-val">30%</span></div><div class="fp-progress-track"><div class="fp-progress-bar fp-progress-bar--wip" data-width="30"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+              </div>
             </div>
-            <h3 class="font-bold text-primary text-base mb-3">تشطيبات مكتبية بالرياض</h3>
-            <span class="inline-flex items-center gap-1.5 text-secondary text-xs font-bold">
-              <span>عرض المشروع</span>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-            </span>
+
+            <div class="swiper-slide">
+              <div class="fp-card">
+                <div class="fp-img-wrap"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop" alt="مشروع عمارة حي الوفاء"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--wip">قيد التنفيذ</span></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة حي الوفاء</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الوفاء</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">قيد التنفيذ</span><span class="fp-progress-val">40%</span></div><div class="fp-progress-track"><div class="fp-progress-bar fp-progress-bar--wip" data-width="40"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+              </div>
+            </div>
+
           </div>
-        </a>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
+
+      
     </div>
   </section>
 
@@ -668,7 +699,7 @@
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <button onclick="openQuoteModal()" class="bg-white text-primary font-bold text-base px-10 py-4 hover:bg-light transition-colors duration-200">اطلب عرض سعر الآن</button>
-        <a href="https://wa.me/966550000000" target="_blank" rel="noopener" class="border-2 border-white text-white font-bold text-base px-10 py-4 hover:bg-white hover:text-primary transition-all duration-200 flex items-center gap-2">
+        <a href="https://wa.me/966505532135" target="_blank" rel="noopener" class="border-2 border-white text-white font-bold text-base px-10 py-4 hover:bg-white hover:text-primary transition-all duration-200 flex items-center gap-2">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.329 0-4.508-.715-6.307-1.937l-.44-.294-2.642.886.886-2.642-.294-.44A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
           <span>واتساب</span>
         </a>
@@ -676,65 +707,56 @@
     </div>
   </section>
 
-  <!-- ===================== QUICK NAV ===================== -->
-  <section class="py-12 lg:py-16 bg-bg border-b border-primary/5">
-    <div class="max-w-8xl mx-auto px-6 lg:px-10">
-      <div class="flex flex-wrap items-center justify-center gap-8 lg:gap-14 reveal">
-        <a href="about.html" class="qnav-link text-primary/60 text-sm font-medium">من نحن</a>
-        <a href="projects.html" class="qnav-link text-primary/60 text-sm font-medium">المشاريع</a>
-        <a href="blog.html" class="qnav-link text-primary/60 text-sm font-medium">المدونة</a>
-        <a href="faq.html" class="qnav-link text-primary/60 text-sm font-medium">الأسئلة الشائعة</a>
-        <a href="contact.html" class="qnav-link text-primary/60 text-sm font-medium">اتصل بنا</a>
-      </div>
-    </div>
-  </section>
+<br>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="bg-primary pt-16 pb-8">
     <div class="max-w-8xl mx-auto px-6 lg:px-10">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-light/10">
         <div>
-          <a href="index.html" class="flex items-center gap-3 mb-6">
+          <a href="../index.html" class="flex items-center gap-3 mb-6">
             <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="2" y="18" width="10" height="20" fill="#E3D8C8"/><rect x="15" y="10" width="10" height="28" fill="#E3D8C8" opacity="0.6"/><polygon points="25,10 38,10 31.5,2" fill="#E3D8C8"/><rect x="28" y="18" width="10" height="20" fill="#E3D8C8" opacity="0.4"/></svg>
             <div>
               <div class="text-light font-bold text-sm leading-tight">مؤسسة حامد درويش</div>
               <div class="text-light font-bold text-sm leading-tight">الخميسي</div>
             </div>
           </a>
-          <p class="text-light/50 text-sm leading-relaxed">مؤسسة رائدة في تقديم الحلول الهندسية والاستشارية على مستوى المملكة العربية السعودية منذ 2010.</p>
+          <p class="text-light/50 text-sm leading-relaxed">مؤسسة رائدة في تقديم الحلول الهندسية والاستشارية على مستوى المملكة العربية السعودية منذ 1996.</p>
         </div>
         <div>
           <h3 class="text-light font-bold text-sm mb-6">روابط سريعة</h3>
           <ul class="space-y-3">
-            <li><a href="index.html" class="text-light/50 text-sm hover:text-light transition-colors">الرئيسية</a></li>
-            <li><a href="about.html" class="text-light/50 text-sm hover:text-light transition-colors">من نحن</a></li>
-            <li><a href="services.html" class="text-light/50 text-sm hover:text-light transition-colors">الخدمات</a></li>
-            <li><a href="projects.html" class="text-light/50 text-sm hover:text-light transition-colors">المشاريع</a></li>
-            <li><a href="contact.html" class="text-light/50 text-sm hover:text-light transition-colors">اتصل بنا</a></li>
+            <li><a href="../index.html" class="text-light/50 text-sm hover:text-light transition-colors">الرئيسية</a></li>
+            <li><a href="../About/About.html" class="text-light/50 text-sm hover:text-light transition-colors">من نحن</a></li>
+            <li><a href="../services/Services.html" class="text-light text-sm">الخدمات</a></li>
+            <li><a href="../Projects/Projects.html" class="text-light/50 text-sm hover:text-light transition-colors">المشاريع</a></li>
+            <li><a href="../Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors">المقلات</a></li>
+            <li><a href="../Faq/Faq.html" class="text-light/50 text-sm hover:text-light transition-colors">الأسئله الشائعة</a></li>
+            <li><a href="../Contact/Contact.html" class="text-light/50 text-sm hover:text-light transition-colors">اتصل بنا</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-light font-bold text-sm mb-6">الخدمات</h3>
           <ul class="space-y-3">
-            <li><a href="services/general-contracting.html" class="text-light/50 text-sm hover:text-light transition-colors">المقاولات العامة</a></li>
-            <li><a href="services/villa-construction.html" class="text-light/50 text-sm hover:text-light transition-colors">بناء الفلل</a></li>
-            <li><a href="services/restoration.html" class="text-light/50 text-sm hover:text-light transition-colors">الترميم</a></li>
-            <li><a href="services/finishing.html" class="text-light/50 text-sm hover:text-light transition-colors">التشطيبات</a></li>
-            <li><a href="services/maintenance.html" class="text-light/50 text-sm hover:text-light transition-colors">الصيانة</a></li>
+            <li><a href="General-contracting-services/General-contracting.html" class="text-light/50 text-sm hover:text-light transition-colors">المقاولات العامة</a></li>
+            <li><a href="Villa-service/Villa.html" class="text-light/50 text-sm hover:text-light transition-colors">بناء الفلل</a></li>
+            <li><a href="Restoration-service/Restoration.html" class="text-light/50 text-sm hover:text-light transition-colors">الترميم</a></li>
+            <li><a href="Finishing-service/Finishing.html" class="text-light/50 text-sm hover:text-light transition-colors">التشطيبات</a></li>
+            <li><a href="Maintenance-service/Maintenance.html" class="text-light/50 text-sm hover:text-light transition-colors">الصيانة</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-light font-bold text-sm mb-6">تواصل معنا</h3>
-          <ul class="space-y-3">
-            <li class="text-light/50 text-sm font-en" dir="ltr">+966 11 000 0000</li>
-            <li class="text-light/50 text-sm font-en" dir="ltr">+966 55 000 0000</li>
-            <li class="text-light/50 text-sm font-en" dir="ltr">info@alkhamisi.sa</li>
+          <ul class="space-y-3" style="direction: ltr; text-align: right;">
+            <li class="text-light/50 text-sm font-en" dir="ltr">+966 50 553 2135</li>
+            <li class="text-light/50 text-sm font-en" dir="ltr">info@hamedgco.com</li>
             <li class="text-light/50 text-sm">جدة، المملكة العربية السعودية</li>
           </ul>
         </div>
       </div>
       <div class="flex flex-col md:flex-row items-center justify-between pt-8 gap-4">
-        <p class="text-light/30 text-xs font-en">© 2026 Al-Khamisi Est. All rights reserved.</p>
+        <p class="text-light/30 text-xs font-ar"> جميع الحقوق محفوظة  لمؤسسة حامد درويش الخميسي © 2026</p>
+        <p class="text-light/30 text-xs font-ar"> تم تصميم وتطوير هذا الموقع بواسطة <a href="https://asadroot.com/">أسد روت (Asad Root).</a> </p>
         <div class="flex items-center gap-6">
           <a href="#" class="text-light/30 text-xs hover:text-light/60 transition-colors">سياسة الخصوصية</a>
           <a href="#" class="text-light/30 text-xs hover:text-light/60 transition-colors">الشروط والأحكام</a>
@@ -781,6 +803,55 @@
       </form>
     </div>
   </div>
+
+  <!-- استدعاء مكتبة Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script>
+    // تشغيل السلايدر بإعدادات نظيفة 100% تضمن الحركة الأفقية الطبيعية
+    document.addEventListener("DOMContentLoaded", function() {
+      new Swiper(".fp-swiper", {
+        loop: true,
+        grabCursor: true,
+        speed: 600,
+        spaceBetween: 24,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: ".fp-swiper .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".fp-swiper .swiper-button-next",
+          prevEl: ".fp-swiper .swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1, spaceBetween: 16 },
+          768: { slidesPerView: 2, spaceBetween: 24 },
+          1200: { slidesPerView: 3, spaceBetween: 32 }
+        }
+      });
+
+      // كود أنيميشن شريط التقدم عند ظهور السكشن
+      const projectsSec = document.getElementById('projects-sec');
+      if(projectsSec) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              document.querySelectorAll('.fp-progress-bar').forEach(bar => {
+                bar.style.width = bar.getAttribute('data-width') + '%';
+              });
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+        observer.observe(projectsSec);
+      }
+    });
+  </script>
 
   <script>
     // Loader
