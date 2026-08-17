@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشروع عمارة سكنية في حي درة العروس بجدة | مؤسسة حامد درويش الخميسي</title>
+  <meta name="description" content="دراسة حالة تفصيلية لتنفيذ مشروع عمارة سكنية في حي درة العروس بجدة. تابع مراحل البناء من صبة النظافة وتركيب البشة والرقاب وحتى اكتمال العمارة مع مؤسسة الخميسي للمقاولات العامة.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hamedgco.com/Projects/Project2-Details/Project2.html">
+  <meta property="og:title" content="مشروع عمارة حي درة العروس بجدة | دراسة حالة تنفيذ">
+  <meta property="og:description" content="تتبع رحلة تنفيذ مشروع عمارة سكنية في درة العروس جدة من صبة النظافة وحتى اكتمال العمارة مع مؤسسة الخميسي للمقاولات.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hamedgco.com/Projects/Project2-Details/Project2.html">
+  <meta property="og:image" content="https://hamedgco.com/Projects/Project2-Details/Extensions/img/amarh-tm.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Project",
+    "name": "مشروع عمارة سكنية - حي درة العروس",
+    "description": "تنفيذ مشروع عمارة سكنية متكاملة في حي درة العروس بمدينة جدة، يشمل أعمال البشة، الرقاب، الدفن، الميدة، الأعمدة، الأسقف، والملحقات.",
+    "url": "https://hamedgco.com/Projects/Project2-Details/Project2.html",
+    "address": {"@type": "PostalAddress", "addressLocality": "جدة", "addressRegion": "مكة المكرمة", "addressCountry": "SA"},
+    "creator": {"@type": "Organization", "name": "مؤسسة حامد درويش الخميسي", "url": "https://hamedgco.com"},
+    "status": "https://schema.org/Completed"
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://hamedgco.com/"},
+    {"@type": "ListItem", "position": 2, "name": "المشاريع", "item": "https://hamedgco.com/Projects/Projects.html"},
+    {"@type": "ListItem", "position": 3, "name": "مشروع عمارة درة العروس", "item": "https://hamedgco.com/Projects/Project2-Details/Project2.html"}
+  ]}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#2F1D0C', secondary: '#6E473B', light: '#E3D8C8', bg: '#FAF7F2' },
+          fontFamily: { ar: ['Tajawal', 'sans-serif'], en: ['Inter', 'sans-serif'] },
+          borderRadius: { 'none': '0px', 'sm': '2px', 'md': '4px' },
+          maxWidth: { '8xl': '1400px' }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../../style.css">
+
+  <style>
+    /* ===== نظام سلايدر مراحل المشروع ===== */
+    .cs-project-slider-viewport {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      background: radial-gradient(ellipse at center, #F2ECE2 0%, #EDE6DA 100%);
+      overflow: hidden;
+      border: 1px solid rgba(47,29,12,0.08);
+    }
+
+    .cs-project-slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      z-index: 0;
+      transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+    }
+
+    .cs-project-slide.cs-slide-active {
+      opacity: 1;
+      transform: translateX(0);
+      z-index: 1;
+      pointer-events: auto;
+    }
+
+    .cs-project-slider-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .cs-project-prev,
+    .cs-project-next {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid rgba(47,29,12,0.12);
+      color: #2F1D0C;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+      -webkit-tap-highlight-color: transparent;
+      flex-shrink: 0;
+    }
+
+    .cs-project-prev:hover,
+    .cs-project-next:hover {
+      background: #2F1D0C;
+      color: #fff;
+      border-color: #2F1D0C;
+      box-shadow: 0 2px 10px rgba(47,29,12,0.2);
+    }
+
+    .cs-project-prev:active,
+    .cs-project-next:active {
+      transform: scale(0.93);
+    }
+
+    .cs-project-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 12%;
+    }
+    .cs-project-divider-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to left, transparent, rgba(47,29,12,0.1), transparent);
+    }
+  </style>
+</head>
+<body class="font-ar">
+
+  <div id="loader"><div class="loader-diamond"></div></div>
+  <div id="toast" class="toast"></div>
+
+  <!-- Nav -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="flex items-center justify-between h-20">
+        <a href="../../index.html" class="flex items-center gap-3 flex-shrink-0" aria-label="الرئيسية">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="flex-shrink-0"><rect x="2" y="18" width="10" height="20" fill="#2F1D0C"/><rect x="15" y="10" width="10" height="28" fill="#6E473B"/><polygon points="25,10 38,10 31.5,2" fill="#2F1D0C"/><rect x="28" y="18" width="10" height="20" fill="#E3D8C8"/></svg>
+          <div class="hidden sm:block"><div class="text-primary font-bold text-sm leading-tight">مؤسسة حامد درويش</div><div class="text-primary font-bold text-sm leading-tight">الخميسي</div></div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="../../index.html" class="nav-link text-primary text-sm font-medium">الرئيسية</a>
+          <a href="../../About/About.html" class="nav-link text-primary text-sm font-medium">من نحن</a>
+          <a href="../../services/Services.html" class="nav-link text-primary text-sm font-medium">الخدمات</a>
+          <a href="../Projects.html" class="nav-link active text-primary text-sm font-medium" style="font-weight:bold;">المشاريع</a>
+          <a href="../../Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقالات</a>
+          <a href="../../Faq/Faq.html" class="nav-link text-primary text-sm font-medium">الأسئلة الشائعة</a>
+          <a href="../../Contact/Contact.html" class="nav-link text-primary text-sm font-medium">اتصل بنا</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <button onclick="openModal()" class="hidden md:inline-flex items-center gap-2 bg-primary text-white text-sm font-medium px-6 py-2.5 hover:bg-secondary transition-colors duration-200">اطلب عرض سعر</button>
+          <button class="lg:hidden hamburger flex flex-col gap-1.5 p-2" onclick="toggleMobile()" aria-label="القائمة"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="../../index.html" onclick="closeMobile()">الرئيسية</a><a href="../../About/About.html" onclick="closeMobile()">من نحن</a><a href="../../services/Services.html" onclick="closeMobile()">الخدمات</a><a href="../Projects.html" onclick="closeMobile()" style="font-weight:bold;">المشاريع</a><a href="../../Articles/Articles.html" onclick="closeMobile()">المقالات</a><a href="../../Faq/Faq.html" onclick="closeMobile()">الأسئلة الشائعة</a><a href="../../Contact/Contact.html" onclick="closeMobile()">اتصل بنا</a>
+    <button onclick="closeMobile();openModal()" class="mt-6 bg-primary text-white text-lg font-medium px-10 py-3">اطلب عرض سعر</button>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <div class="pt-24 pb-4 bg-bg">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <nav aria-label="التنقل التفصيلي" class="flex items-center gap-2 text-sm">
+        <a href="../../index.html" class="text-secondary/50 hover:text-secondary transition-colors">الرئيسية</a>
+        <span class="text-secondary/50 text-primary"> ↚ </span>
+        <a href="../Projects.html" class="text-secondary/50 hover:text-secondary transition-colors">المشاريع</a>
+        <span class="text-secondary/50 text-primary"> ↚ </span>
+        <span class="text-primary font-medium">مشروع عمارة درة العروس</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative py-24 lg:py-36 bg-primary overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="Extensions/img/amarh-tm.jpeg" alt="مشروع عمارة سكنية في حي درة العروس بجدة" class="w-full h-full object-cover opacity-20" style="filter: blur(4px) grayscale(100%);">
+      <div class="absolute inset-0 bg-primary/85"></div>
+      <div class="absolute inset-0 geo-diagonal opacity-40"></div>
+    </div>
+    <div class="absolute top-24 right-10 lg:right-16 w-20 h-20 bracket-tr hidden md:block"></div>
+    <div class="absolute bottom-10 left-10 lg:left-16 w-20 h-20 bracket-bl hidden md:block"></div>
+    
+    <div class="max-w-8xl mx-auto px-6 lg:px-10 relative z-10">
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-3 mb-6 reveal">
+          <div class="diamond diamond-sm diamond-white"></div>
+          <span class="text-light/60 text-sm font-en tracking-wider">CASE STUDY — RESIDENTIAL BUILDING</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 mb-4 reveal stagger-1">
+          <span class="bg-light/20 text-light text-xs font-bold px-3 py-1 rounded-full border border-light/30">مكتمل</span>
+          <span class="text-light/50 text-sm">جدة — حي درة العروس</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 reveal stagger-2">
+          مشروع عمارة سكنية<br>
+          <span class="text-light">في حي درة العروس بجدة</span>
+        </h1>
+        <p class="text-lg text-light/70 leading-relaxed max-w-xl mb-10 reveal stagger-3">
+          مشروع إنشائي سكني متكامل نفّذته مؤسسة الخميسي للمقاولات العامة في أحد أحياء جدة المتميزة، بمنهجية هندسية دقيقة تضمن جودة البناء من أول مرحلة حتى التسليم النهائي.
+        </p>
+        <div class="flex flex-wrap gap-4 reveal stagger-4">
+          <button onclick="openModal()" class="bg-white text-primary font-bold text-base px-8 py-3.5 hover:bg-light transition-colors duration-200 flex items-center gap-2">
+            <span>اطلب عرض سعر لمشروع مشابه</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          </button>
+          <a href="https://wa.me/966505532135" target="_blank" rel="noopener" class="bg-transparent border-2 border-white text-white font-bold text-base px-8 py-3.5 hover:bg-white hover:text-primary transition-all duration-200 flex items-center gap-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.329 0-4.508-.715-6.307-1.937l-.44-.294-2.642.886.886-2.642-.294-.44A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+            <span>تواصل مع المهندسين</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-20 lg:py-28 bg-bg geo-blocks">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-20 items-center">
+        <div class="mb-12 lg:mb-0 reveal-left">
+          <div class="story-image inline-block">
+            <img src="Extensions/img/amarh-tm.jpeg" alt="مرحلة صب البشة في مشروع عمارة درة العروس بجدة" class="w-full max-w-md aspect-[4/5] object-cover brand-img" loading="lazy">
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="heading-line"></div><div class="diamond diamond-sm"></div>
+          </div>
+          <h2 class="text-3xl lg:text-4xl font-black text-primary mb-6">نبذة عن المشروع</h2>
+          <div class="space-y-5 text-secondary/80 text-[15px] leading-[1.85]">
+            <p>يُمثل هذا المشروع إحدى التجارب الناجحة لمؤسسة حامد درويش الخميسي في مجال <strong class="text-primary">إنشاء عمائر في جدة</strong>. تم تنفيذ مشروع عمارة سكنية في حي درة العروس وفق منهجية هندسية متسلسلة تبدأ من مرحلة التجهيز الأولي وتمر بجميع مراحل البناء الإنشائي حتى الوصول إلى عمارة مكتملة جاهزة للتسليم.</p>
+            <p>ما يميز هذا المشروع هو الالتزام الصارم بمراحل بناء العمارة بالتسلسل الصحيح: بدءاً من صبة النظافة، ثم تركيب وصب البشة، والتعامل مع الرقاب من تركيب وفك وعزل، مروراً بالدفن والميدة وتنفيذ الأعمدة والأسقف، وصولاً إلى بناء الدور الثاني وتنفيذ الملحقات. كل مرحلة أُنجزت بعناية فائقة لضمان سلامة الهيكل الإنشائي.</p>
+            <p>هذه المنهجية المنظمة في <strong class="text-primary">تنفيذ المشاريع السكنية</strong> هي ما يجعل العملاء يثقون في مؤسسة الخميسي كشركة مقاولات في جدة قادرة على تحويل المخططات الهندسية إلى واقع ملموس بجودة عالية والتزام بالمواعيد.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Cards -->
+  <section class="py-16 bg-white border-y border-primary/5">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        <div class="service-card p-6 text-center">
+          <div class="w-12 h-12 flex items-center justify-center border-2 border-secondary mx-auto mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3 class="text-sm font-bold text-secondary mb-1">المدينة</h3>
+          <p class="text-lg font-black text-primary">جدة</p>
+        </div>
+        <div class="service-card p-6 text-center">
+          <div class="w-12 h-12 flex items-center justify-center border-2 border-secondary mx-auto mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+          <h3 class="text-sm font-bold text-secondary mb-1">الحي</h3>
+          <p class="text-lg font-black text-primary">درة العروس</p>
+        </div>
+        <div class="service-card p-6 text-center">
+          <div class="w-12 h-12 flex items-center justify-center border-2 border-secondary mx-auto mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg></div>
+          <h3 class="text-sm font-bold text-secondary mb-1">نوع العقار</h3>
+          <p class="text-lg font-black text-primary">عمارة سكنية</p>
+        </div>
+        <div class="service-card p-6 text-center">
+          <div class="w-12 h-12 flex items-center justify-center border-2 border-secondary mx-auto mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <h3 class="text-sm font-bold text-secondary mb-1">حالة المشروع</h3>
+          <p class="text-lg font-black text-primary">مكتمل بنجاح</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== مراحل تنفيذ المشروع ========== -->
+  <section class="py-20 lg:py-28 bg-bg">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-16 reveal">
+        <div class="flex items-center justify-center gap-3 mb-4"><div class="heading-line"></div><div class="diamond diamond-sm"></div><div class="heading-line"></div></div>
+        <h2 class="text-3xl lg:text-4xl font-black text-primary mb-4">رحلة التنفيذ خطوة بخطوة</h2>
+        <p class="text-secondary text-base max-w-2xl mx-auto leading-relaxed">نأخذك في جولة تفصيلية عبر المراحل الهندسية التي اتبعناها لضمان سلامة الهيكل وجودة التنفيذ.</p>
+      </div>
+
+      <div class="space-y-16 lg:space-y-24">
+
+        <!-- ===== المرحلة 1: صبة النظافة (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">01</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة صبة النظافة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">تبدأ أعمال إنشاء العمارة بتنظيف وتسوية الأرضية التي ستُقام عليها البنية التحتية للمبنى. تُعد هذه المرحلة الأساس الأولي الذي يضمن استواء السطح قبل البدء بأي أعمال إنشائية لاحقة، حيث يتم إزالة الأنقاص والتربة الزائدة وتسوية الأرض بعناية.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تسوية الأرض</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تجهيز الموقع</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/sbh-ndafh.jpeg" alt="صبة النظافة في مشروع عمارة درة العروس" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 2: تركيب البشة (زوجية → صورة يمين / نص يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">02</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة تركيب البشة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">البشة هي القاعدة الخرسانية المسلحة التي تُوزع الأحمال على التربة. في هذه المرحلة يتم تركيب حديد التسليح وتشكيل القوالب بعناية فائقة لضمان أن البشة ستحمل وزن المبنى بالكامل بشكل آمن ومتوازن دون أي هبوط غير متوقع.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">حديد التسليح</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تشكيل القوالب</span>
+            </div>
+          </div>
+          <div class="lg:order-2">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/trkyb-lbshh.jpeg" alt="تركيب البشة في مشروع عمارة جدة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 3: صبة البشة (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">03</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة صب البشة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">بعد الانتهاء من تركيب التسليح والقوالب، يتم ضخ الخرسانة الجاهزة وتوزيعها بشكل متساوٍ داخل القوالب. هذه المرحلة حرجة لأن أي خلل في توزيع الخرسان أو اهتزازها قد يؤثر على قوة القاعدة ومقدرتها على تحمل الأحمال المطلوبة.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">ضخ الخرسانة</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">توزيع متساوٍ</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/sbh-lbshh.jpeg" alt="صب البشة في مشروع عمارة درة العروس" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 4: تركيب الرقاب (زوجية → صورة يمين / نص يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">04</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة تركيب الرقاب</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">الرقاب هي العناصر الإنشائية التي تربط البشة بالهيكل العلوي. يتم في هذه المرحلة تركيب حديد التسليح للرقاب وتثبيتها بدقة هندسية على البشة، مع التأكد من محاذاة الرقاب بشكل يضمن توزيع الأحمال بشكل صحيح على القاعدة.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تثبيت التسليح</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">محاذاة هندسية</span>
+            </div>
+          </div>
+          <div class="lg:order-2">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/trkyb-rqab.jpeg" alt="تركيب الرقاب في مشروع عمارة جدة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 5: فك وعزل الرقاب (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">05</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة فك وعزل الرقاب</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">بعد تصلب الخرسان يتم فك القوالب عن الرقاب بعناية، ثم تطبيق طبقة العزل الحراري والمائي. العزل يحمي الرقاب من تأثيرات الرطوبة وتغيرات الحرارة، وهو عنصر أساسي في ضمان عمر أطول للمنشأ وحمايته من التآكل والشقوق.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">فك القوالب</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">عزل حراري ومائي</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/fk-azl-rqab.jpeg" alt="فك وعزل الرقاب في مشروع عمارة درة العروس" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 6: الدفن (زوجية → صورة يمين / نص يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">06</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة الدفن</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">بعد عزل الرقاب، تتم عملية دفن القواعد بإعادة ردم التربة حولها طبقة تلو الأخرى مع الدمك بعناية. هذه المرحلة تُعيد مستوى الأرض إلى وضعه الطبيعي وتحمي القواعد والعزل من العوامل الخارجية، مع ضمان عدم وجود فراغات في التربة المردومة.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">ردم التربة</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">دمك طبقات</span>
+            </div>
+          </div>
+          <div class="lg:order-2">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/dfn.jpeg" alt="مرحلة الدفن في مشروع عمارة جدة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 7: الميدة (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">07</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة الميدة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">الميدة هي السقف الخرساني المسلح الذي يشكّل الأرضية الحاملة للدور. يتم في هذه المرحلة صب الخرسانة فوق شبكة التسليح المُجهزة مسبقاً، مع مراقبة سماكة الصبّة وتوزيع الخرسانة بالتساوي لضمان قدرة الميدة على تحمل الأحمال المطلوبة دون أي تشوهات.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">صب السقف</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">مراقبة السماكة</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/mida.jpeg" alt="تنفيذ الميدة في مشروع عمارة درة العروس" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 8: الأعمدة قبل الصبة (زوجية → صورة يمين / نص يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">08</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة الأعمدة قبل الصبة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">يُعد تنفيذ الأعمدة من أخطر مراحل بناء العمارة لأنها العمود الفقري للهيكل. في هذه المرحلة يتم ربط حديد التسليح للأعمدة مع الميدة وتثبيت القوالب حوله بدقة هندسية صارمة، تمهيداً لصب الخرسانة التي ستجعل العمود عنصراً حاملاً رئيسياً للأدوار العلوية.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تسليح الأعمدة</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تثبيت القوالب</span>
+            </div>
+          </div>
+          <div class="lg:order-2">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/amdan-qbl1.jpeg" alt="تنفيذ الأعمدة قبل الصبة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+                <img src="Extensions/img/amdan-qbl2.jpeg" alt="تفاصيل تسليح الأعمدة" class="cs-project-slide" data-slide-index="1">
+                <img src="Extensions/img/amdan-qbl3.jpeg" alt="تثبيت قوالب الأعمدة" class="cs-project-slide" data-slide-index="2">
+                <img src="Extensions/img/amdan-qbl4.jpeg" alt="الأعمدة جاهزة للصب" class="cs-project-slide" data-slide-index="3">
+              </div>
+              <div class="cs-project-slider-nav">
+                <button class="cs-project-prev" aria-label="الصورة السابقة"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+                <button class="cs-project-next" aria-label="الصورة التالية"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 9: الأعمدة بعد الصبة (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">09</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة الأعمدة بعد الصبة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">بعد صب الخرسانة وتصلبها يتم فك القوالب عن الأعمدة وفحصها بدقة للتأكد من سلامة السطح وعدم وجود تشققات أو فراغات. الأعمدة النهائية الآن تحمل الميدة وتُشكّل جزءاً أساسياً من الهيكل الإنشائي القادر على تحميل الأدوار اللاحقة.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">فحص الأعمدة</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">سلامة الهيكل</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/amdan-bad.jpeg" alt="الأعمدة بعد الصبة في مشروع عمارة جدة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 10: سقف الدور الأول (زوجية → صورة يمين / نص يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">10</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">سقف الدور الأول</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">بعد اكتمال الأعمدة يتم تنفيذ سقف الدور الأول الذي يشكّل في الوقت نفسه أرضية الدور الثاني. هذه المرحلة تتطلب دقة عالية في تسوية السطح وضمان استوائه، لأن أي ميلان أو عدم تسوية سينعكس سلباً على جودة البناء في الأدوار العلوية.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">سقف الدور</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تسوية السطح</span>
+            </div>
+          </div>
+          <div class="lg:order-2">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/sqf-dor-one1.jpeg" alt="تنفيذ سقف الدور الأول" class="cs-project-slide cs-slide-active" data-slide-index="0">
+                <img src="Extensions/img/sqf-dor-one2.jpeg" alt="تفاصيل صب السقف" class="cs-project-slide" data-slide-index="1">
+                <img src="Extensions/img/sqf-dor-one3.jpeg" alt="تسوية سقف الدور الأول" class="cs-project-slide" data-slide-index="2">
+                <img src="Extensions/img/sqf-dor-one4.jpeg" alt="السقف بعد الإنجاز" class="cs-project-slide" data-slide-index="3">
+              </div>
+              <div class="cs-project-slider-nav">
+                <button class="cs-project-prev" aria-label="الصورة السابقة"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+                <button class="cs-project-next" aria-label="الصورة التالية"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 11: الدور الثاني (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">11</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة الدور الثاني</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">يتم تطبيق نفس المنهجية المتبعة في الدور الأول لتنفيذ الدور الثاني، مع ضمان التوافق التام بين الطابقين من حيث الأبعاد ومواقع الأعمدة والفتحات. هذا التكرار المنهجي يضمن تماسك الهيكل الإنشائي للمبنى بأكمله.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تكرار المنهجية</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">توافق الأدوار</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/dor-2-a.jpeg" alt="تنفيذ الدور الثاني في العمارة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 12: العمارة قبل الملحق (زوجية → صورة يمين / نص يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">12</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة العمارة قبل الملحق</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">في هذه المرحلة يكون الهيكل الخرساني الرئيسي للعمارة قد اكتمل، وتظهر معالم المبنى بوضوح. هذا التصوير يوثق حالة العمارة قبل البدء بأعمال الملحقات التي ستُضيف المساحات الإضافية واللمسات النهائية على المشروع.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">اكتمال الهيكل</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">توثيق المرحلة</span>
+            </div>
+          </div>
+          <div class="lg:order-2">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/alamarh-qbl-mlhq.jpeg" alt="العمارة قبل تنفيذ الملحق" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 13: الملحق قبل الصبة (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">13</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة الملحق قبل الصبة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">تبدأ أعمال الملحق بتركيب التسليح وتشكيل القوالب للمساحات الإضافية. يتم ربط الملحق بهيكل العمارة الرئيسي بعناية لضمان التكامل الإنشائي بين الجزء الأصلي والإضافات، مع مراعاة أن يتحمل الملحق الأحمال المطلوبة منه بشكل مستقل ومتصل.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">تركيب التسليح</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">ربط بالهيكل</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/sbh-mlhq-qbl1.jpeg" alt="الملحق قبل الصبة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+                <img src="Extensions/img/sbh-mlhq-qbl-2.jpeg" alt="تفاصيل تسليح الملحق" class="cs-project-slide" data-slide-index="1">
+                <img src="Extensions/img/sbh-mlhq-qbl-3.jpeg" alt="قوالب الملحق جاهزة" class="cs-project-slide" data-slide-index="2">
+              </div>
+              <div class="cs-project-slider-nav">
+                <button class="cs-project-prev" aria-label="الصورة السابقة"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+                <button class="cs-project-next" aria-label="الصورة التالية"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 14: الملحق أثناء الصبة (زوجية → صورة يمين / نص يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-1">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">14</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة الملحق أثناء الصبة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">هذه لحظة حاسمة في بناء الملحق، حيث يتم ضخ الخرسانة وتوزيعها داخل القوالب مع استخدام تقنيات الاهتزاز لضمان عدم وجود فراغات هوائية. المراقبة المستمرة خلال الصب تضمن أن الملحق سيكون امتداداً إنشائياً متيناً للعمارة.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">ضخ الخرسانة</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">مراقبة مستمرة</span>
+            </div>
+          </div>
+          <div class="lg:order-2">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/atna-sbh-mlhq-1.jpeg" alt="صب الملحق - المرحلة الأولى" class="cs-project-slide cs-slide-active" data-slide-index="0">
+                <img src="Extensions/img/atna-sbh-mlhq-2.jpeg" alt="توزيع الخرسانة في الملحق" class="cs-project-slide" data-slide-index="1">
+                <img src="Extensions/img/atna-sbh-mlhq-3.jpeg" alt="اهتزاز الخرسانة" class="cs-project-slide" data-slide-index="2">
+                <img src="Extensions/img/atna-sbh-mlhq-4.jpeg" alt="الملحق أثناء الصب" class="cs-project-slide" data-slide-index="3">
+              </div>
+              <div class="cs-project-slider-nav">
+                <button class="cs-project-prev" aria-label="الصورة السابقة"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+                <button class="cs-project-next" aria-label="الصورة التالية"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-project-divider"><span class="cs-project-divider-line"></span><div class="diamond diamond-sm" style="opacity:0.4"></div><span class="cs-project-divider-line"></span></div>
+
+        <!-- ===== المرحلة 15: العمارة مكتملة (فردية → نص يمين / صورة يسار) ===== -->
+        <div class="cs-project-stage lg:grid lg:grid-cols-2 lg:gap-16 items-center reveal">
+          <div class="mb-10 lg:mb-0 lg:order-2">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-5xl font-black text-secondary/20 font-en">15</span>
+              <div class="h-px flex-1 bg-secondary/20"></div>
+            </div>
+            <h3 class="text-2xl font-bold text-primary mb-4">مرحلة العمارة مكتملة</h3>
+            <p class="text-secondary/70 text-[15px] leading-[1.85] mb-6">النتيجة النهائية لرحلة بناء متكاملة بدأت من صبة النظافة ومرت بجميع المراحل الإنشائية. العمارة الآن مكتملة بهيكل خرساني متين وجاهزة لمراحل التشطيبات الداخلية والخارجية. هذا الإنجاز يعكس التزام مؤسسة الخميسي بتنفيذ <a href="../../services/General-contracting-services/General-contracting.html" class="text-secondary hover:text-primary underline transition-colors">المقاولات العامة</a> بأعلى المعايير.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">مشروع مكتمل</span>
+              <span class="text-xs font-bold bg-light text-primary px-3 py-1">جودة التنفيذ</span>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <div class="cs-project-slider mx-auto max-w-sm">
+              <div class="cs-project-slider-viewport">
+                <img src="Extensions/img/amarh-tm.jpeg" alt="العمارة مكتملة في حي درة العروس بجدة" class="cs-project-slide cs-slide-active" data-slide-index="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- مشاريع مشابهة -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-12 reveal">
+        <div class="flex items-center justify-center gap-3 mb-4"><div class="heading-line"></div><div class="diamond diamond-sm"></div><div class="heading-line"></div></div>
+        <h2 class="text-3xl lg:text-4xl font-black text-primary mb-4">مشاريع مشابهة</h2>
+        <p class="text-secondary text-base max-w-2xl mx-auto leading-relaxed">استعرض مشاريع سكنية أخرى نفّذتها مؤسسة الخميسي للمقاولات العامة في جدة.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+        <!-- مشروع 1 -->
+        <a href="../Project1-Details/Project1.html" class="group service-card block overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="../Project1-Details/Extensions/img/alqoad.jpeg" alt="مشروع عمارة حي الفروسية بجدة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="bg-light text-primary text-xs font-bold px-2.5 py-0.5">مكتمل</span>
+              <span class="text-secondary/50 text-xs">جدة — الفروسية</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">مشروع عمارة سكنية — حي الفروسية</h3>
+            <p class="text-secondary/60 text-sm mt-2 leading-relaxed">دراسة حالة تفصيلية لتنفيذ مشروع عمارة سكنية متكاملة من أعمال القواعد حتى التشطيبات.</p>
+          </div>
+        </a>
+        <!-- رابط لصفحة المشاريع -->
+        <a href="../Projects.html" class="group service-card block overflow-hidden">
+          <div class="aspect-[4/3] bg-bg flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-16 h-16 border-2 border-secondary/30 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:border-secondary group-hover:bg-secondary/5 transition-all duration-300">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E473B" stroke-width="2" stroke-linecap="square"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              </div>
+              <p class="text-primary font-bold">استعرض جميع المشاريع</p>
+              <p class="text-secondary/50 text-sm mt-1">مشاريع سكنية وتجارية متنوعة</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">المزيد من المشاريع</h3>
+            <p class="text-secondary/60 text-sm mt-2 leading-relaxed">اكتشف باقي مشاريعنا في مجالات المقاولات العامة والبناء والتشطيبات.</p>
+          </div>
+        </a>
+        <!-- تواصل معنا -->
+        <a href="../../Contact/Contact.html" class="group service-card block overflow-hidden">
+          <div class="aspect-[4/3] bg-primary flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-16 h-16 border-2 border-light/30 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:border-light/60 transition-all duration-300">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E3D8C8" stroke-width="2" stroke-linecap="square"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              </div>
+              <p class="text-light font-bold">لديك مشروع مماثل؟</p>
+              <p class="text-light/50 text-sm mt-1">تواصل معنا الآن</p>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-primary group-hover:text-secondary transition-colors">ابدأ مشروعك</h3>
+            <p class="text-secondary/60 text-sm mt-2 leading-relaxed">تواصل مع مهندسينا للحصول على استشارة مجانية وتقييم دقيق لمشروعك السكني.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="relative py-24 lg:py-32 bg-primary overflow-hidden cta-diagonal">
+    <div class="absolute inset-0 geo-grid opacity-10"></div>
+    <div class="absolute top-8 right-12 w-24 h-24 bracket-tr hidden lg:block" style="border-color: rgba(227,216,200,0.2)"></div>
+    <div class="absolute bottom-8 left-12 w-24 h-24 bracket-bl hidden lg:block" style="border-color: rgba(227,216,200,0.2)"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center relative z-10 reveal">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="diamond diamond-sm diamond-white"></div>
+        <span class="text-light/50 text-sm font-en tracking-wider">READY TO BUILD?</span>
+        <div class="diamond diamond-sm diamond-white"></div>
+      </div>
+      <h2 class="text-3xl lg:text-5xl font-black text-white mb-6 leading-tight">هل لديك مشروع في بالك؟<br><span class="text-light">دعنا نحوله إلى حقيقة</span></h2>
+      <p class="text-light/60 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+        استفد من خبرتنا في تنفيذ مشاريع سكنية مشابهة في جدة. تواصل معنا اليوم للحصول على استشارة هندسية مجانية وتقييم دقيق لتكلفة مشروعك.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button onclick="openModal()" class="bg-white text-primary font-bold text-base px-10 py-4 hover:bg-light transition-colors duration-200 flex items-center gap-2">
+          <span>اطلب عرض سعر لمشروعك</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        </button>
+        <a href="../Projects.html" class="border-2 border-white/30 text-white font-bold text-base px-10 py-4 hover:border-white hover:bg-white hover:text-primary transition-all duration-200">
+          استعرض بقية المشاريع
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="h-20 bg-bg"></div>
+
+  <!-- Footer -->
+  <footer class="bg-primary pt-16 pb-8">
+    <div class="max-w-8xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-light/10">
+        <div class="lg:col-span-1">
+          <a href="../../index.html" class="flex items-center gap-3 mb-6">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="2" y="18" width="10" height="20" fill="#E3D8C8"/><rect x="15" y="10" width="10" height="28" fill="#E3D8C8" opacity="0.6"/><polygon points="25,10 38,10 31.5,2" fill="#E3D8C8"/><rect x="28" y="18" width="10" height="20" fill="#E3D8C8" opacity="0.4"/></svg>
+            <div>
+              <div class="text-light font-bold text-sm leading-tight">مؤسسة حامد درويش</div>
+              <div class="text-light font-bold text-sm leading-tight">الخميسي</div>
+            </div>
+          </a>
+          <p class="text-light/50 text-sm leading-relaxed mb-6">مؤسسة رائدة في تقديم الحلول الهندسية والاستشارية على مستوى المملكة العربية السعودية منذ 1996.</p>
+        </div>
+        <div>
+          <h3 class="text-light font-bold text-sm mb-6">روابط سريعة</h3>
+          <ul class="space-y-3">
+            <li><a href="../../index.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الرئيسية</a></li>
+            <li><a href="../../About/About.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">من نحن</a></li>
+            <li><a href="../../services/Services.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الخدمات</a></li>
+            <li><a href="../Projects.html" class="text-light text-sm">المشاريع</a></li>
+            <li><a href="../../Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المقالات</a></li>
+            <li><a href="../../Faq/Faq.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الأسئلة الشائعة</a></li>
+            <li><a href="../../Contact/Contact.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-light font-bold text-sm mb-6">الخدمات</h3>
+          <ul class="space-y-3">
+            <li><a href="../../services/General-contracting-services/General-contracting.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المقاولات العامة</a></li>
+            <li><a href="../../services/Villa-service/Villa.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">بناء الفلل</a></li>
+            <li><a href="../../services/Restoration-service/Restoration.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الترميم</a></li>
+            <li><a href="../../services/Finishing-service/Finishing.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">التشطيبات</a></li>
+            <li><a href="../../services/Maintenance-service/Maintenance.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الصيانة</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-light font-bold text-sm mb-6">تواصل معنا</h3>
+          <ul class="space-y-3" style="text-align: right;">
+            <li class="text-light/50 text-sm font-en" dir="ltr">+966 50 553 2135</li>
+            <li class="text-light/50 text-sm font-en" dir="ltr">info@hamedgco.com</li>
+            <li class="text-light/50 text-sm">جدة، المملكة العربية السعودية</li>
+            <li class="text-light/50 text-sm font-en" dir="ltr">hamedgco.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-between pt-8 gap-4">
+        <p class="text-light/30 text-xs font-ar">جميع الحقوق محفوظة لمؤسسة حامد درويش الخميسي © 2026</p>
+        <p class="text-light/30 text-xs font-ar">تم تصميم وتطوير هذا الموقع بواسطة <a href="https://asadroot.com/" class="hover:text-light/60 transition-colors">أسد روت (Asad Root).</a></p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-light/30 text-xs hover:text-light/60 transition-colors">سياسة الخصوصية</a>
+          <a href="#" class="text-light/30 text-xs hover:text-light/60 transition-colors">الشروط والأحكام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/966505532135" target="_blank" rel="noopener" class="wa-float" aria-label="تواصل عبر واتساب">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.329 0-4.508-.715-6.307-1.937l-.44-.294-2.642.886.886-2.642-.294-.44A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="backTop" class="back-top" onclick="window.scrollTo({top:0})" aria-label="العودة للأعلى">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="../../script.js"></script>
+  
+  <script>
+    /* ===== سلايدر مراحل المشروع — كل سلايدر مستقل تمامًا ===== */
+    document.addEventListener("DOMContentLoaded", function() {
+      var allSliders = document.querySelectorAll('.cs-project-slider');
+
+      allSliders.forEach(function(slider) {
+        var slides = slider.querySelectorAll('.cs-project-slide');
+        var prevBtn = slider.querySelector('.cs-project-prev');
+        var nextBtn = slider.querySelector('.cs-project-next');
+
+        if (slides.length <= 1) return;
+
+        var currentIndex = 0;
+        var isAnimating = false;
+        var SLIDE_OFFSET = '18%';
+        var ANIM_DURATION = 520;
+
+        function goTo(newIndex, direction) {
+          if (isAnimating) return;
+          isAnimating = true;
+
+          if (newIndex < 0) newIndex = slides.length - 1;
+          if (newIndex >= slides.length) newIndex = 0;
+
+          if (newIndex === currentIndex) {
+            isAnimating = false;
+            return;
+          }
+
+          var currentSlide = slides[currentIndex];
+          var newSlide = slides[newIndex];
+
+          newSlide.style.transition = 'none';
+          newSlide.style.transform = direction === 'next'
+            ? 'translateX(' + SLIDE_OFFSET + ')'
+            : 'translateX(-' + SLIDE_OFFSET + ')';
+          newSlide.style.opacity = '0';
+
+          void newSlide.offsetHeight;
+
+          newSlide.style.transition = '';
+          currentSlide.style.transition = '';
+
+          currentSlide.style.transform = direction === 'next'
+            ? 'translateX(-' + SLIDE_OFFSET + ')'
+            : 'translateX(' + SLIDE_OFFSET + ')';
+          currentSlide.style.opacity = '0';
+          currentSlide.classList.remove('cs-slide-active');
+
+          newSlide.style.transform = 'translateX(0)';
+          newSlide.style.opacity = '1';
+          newSlide.classList.add('cs-slide-active');
+
+          currentIndex = newIndex;
+
+          setTimeout(function() {
+            isAnimating = false;
+          }, ANIM_DURATION);
+        }
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            goTo(currentIndex - 1, 'prev');
+          });
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            goTo(currentIndex + 1, 'next');
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
