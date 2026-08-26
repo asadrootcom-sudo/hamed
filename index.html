@@ -51,6 +51,7 @@
   }
   </script>
 
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
@@ -104,8 +105,8 @@
 
     #loader { position: fixed; inset: 0; z-index: 9999; background: #2F1D0C; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s ease, visibility 0.5s ease; }
     #loader.hidden { opacity: 0; visibility: hidden; }
-    .loader-diamond { width: 24px; height: 24px; border: 2px solid #E3D8C8; transform: rotate(45deg); animation: loaderPulse 1s ease-in-out infinite; }
-    @keyframes loaderPulse { 0%, 100% { opacity: 0.3; transform: rotate(45deg) scale(0.8); } 50% { opacity: 1; transform: rotate(45deg) scale(1.2); } }
+    .loader-diamond { animation: loaderPulse 1s ease-in-out infinite; }
+    @keyframes loaderPulse { 0%, 100% { opacity: 0.3; transform: rotate(0deg) scale(0.8); } 50% { opacity: 1; transform: rotate(0deg) scale(1.2); } }
 
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .reveal.active { opacity: 1; transform: translateY(0); }
@@ -245,7 +246,7 @@
 </head>
 <body class="font-ar">
 
-  <div id="loader"><div class="loader-diamond"></div></div>
+  <div id="loader"><div class="loader-diamond"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="2" y="18" width="10" height="20" fill="#E3D8C8"/><rect x="15" y="10" width="10" height="28" fill="#E3D8C8" opacity="0.6"/><polygon points="25,10 38,10 31.5,2" fill="#E3D8C8"/><rect x="28" y="18" width="10" height="20" fill="#E3D8C8" opacity="0.4"/></svg></div></div>
   <div id="toast" class="toast"></div>
 
   <!-- Navigation -->
@@ -264,7 +265,7 @@
           <a href="About/About.html" class="nav-link text-primary text-sm font-medium">من نحن</a>
           <a href="services/Services.html" class="nav-link text-primary text-sm font-medium">الخدمات</a>
           <a href="Projects/Projects.html" class="nav-link text-primary text-sm font-medium">المشاريع</a>
-          <a href="Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقالات</a>
+          <!-- <a href="Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقالات</a> -->
           <a href="Faq/Faq.html" class="nav-link text-primary text-sm font-medium">الأسئلة الشائعة</a>
           <a href="Contact/Contact.html" class="nav-link text-primary text-sm font-medium">اتصل بنا</a>
         </div>
@@ -281,7 +282,7 @@
     <a href="About/About.html" onclick="closeMobile()">من نحن</a>
     <a href="services/Services.html" onclick="closeMobile()">الخدمات</a>
     <a href="Projects/Projects.html" onclick="closeMobile()">المشاريع</a>
-    <a href="Articles/Articles.html" onclick="closeMobile()">المقالات</a>
+    <!-- <a href="Articles/Articles.html" onclick="closeMobile()">المقالات</a> -->
     <a href="Faq/Faq.html" onclick="closeMobile()">الأسئلة الشائعة</a>
     <a href="Contact/Contact.html" onclick="closeMobile()">اتصل بنا</a>
     <button onclick="closeMobile();openModal()" class="mt-6 bg-primary text-white text-lg font-medium px-10 py-3">اطلب عرض سعر</button>
@@ -374,37 +375,37 @@
             <div class="swiper-slide">
               <div class="fp-card">
                 <div class="fp-img-wrap"><img src="https://postcdn.haraj.com.sa/userfiles30/2026-03-26/960x1280_9EC8CEE2-4DE0-48F6-9BC1-C8F5D20952E2.jpg-700.webp" alt="مشروع عمارة الفروسية"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--done">تم الإنجاز</span></div>
-                <div class="fp-content"><h3 class="fp-title">مشروع عمارة الفروسية</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الفروسية</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة الفروسية</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الفروسية</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="Projects/Project1-Details/Project1.html" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="fp-card">
                 <div class="fp-img-wrap"><img src="Projects/Project2-Details/Extensions/img/amarh-tm.jpeg" alt="مشروع عمارة درة العروس"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--done">تم الإنجاز</span></div>
-                <div class="fp-content"><h3 class="fp-title">مشروع عمارة درة العروس</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>درة العروس</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة درة العروس</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>درة العروس</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="Projects/Project2-Details/Project2.html" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="fp-card">
                 <div class="fp-img-wrap"><img src="Projects/Project3-Details/Extensions/img/amrh.jpeg" alt="مشروع عمارة حي الرياض"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--done">تم الإنجاز</span></div>
-                <div class="fp-content"><h3 class="fp-title">مشروع عمارة حي الرياض</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الرياض</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة حي الرياض</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الرياض</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">تم الإنجاز</span><span class="fp-progress-val">100%</span></div><div class="fp-progress-track"><div class="fp-progress-bar" data-width="100"></div></div></div><a href="Projects/Project3-Details/Project3.html" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
               </div>
             </div>
 
             <div class="swiper-slide">
               <div class="fp-card">
                 <div class="fp-img-wrap"><img src="https://mostaql.hsoubcdn.com/uploads/portfolios/1599675/634fde0b23f22/Pers-02-V03.jpg" alt="مشروع عمارة أبحر"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--wip">قيد التنفيذ</span></div>
-                <div class="fp-content"><h3 class="fp-title">مشروع عمارة أبحر</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>أبحر</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">قيد التنفيذ</span><span class="fp-progress-val">30%</span></div><div class="fp-progress-track"><div class="fp-progress-bar fp-progress-bar--wip" data-width="30"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة أبحر</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>أبحر</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">قيد التنفيذ</span><span class="fp-progress-val">30%</span></div><div class="fp-progress-track"><div class="fp-progress-bar fp-progress-bar--wip" data-width="30"></div></div></div><a href="Projects/Project4-Details/Project4.html" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
               </div>
             </div>
 
-            <!-- <div class="swiper-slide">
+            <div class="swiper-slide">
               <div class="fp-card">
-                <div class="fp-img-wrap"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop" alt="مشروع عمارة حي الوفاء"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--wip">قيد التنفيذ</span></div>
-                <div class="fp-content"><h3 class="fp-title">مشروع عمارة حي الوفاء</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الوفاء</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">قيد التنفيذ</span><span class="fp-progress-val">40%</span></div><div class="fp-progress-track"><div class="fp-progress-bar fp-progress-bar--wip" data-width="40"></div></div></div><a href="#" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
+                <div class="fp-img-wrap"><img src="https://mostaql.hsoubcdn.com/uploads/thumbnails/331985/64cf9e24ac1a2/c01.jpg" alt="مشروع عمارة حي الوفاء"><div class="fp-img-overlay"></div><span class="fp-badge fp-badge--wip">قيد التنفيذ</span></div>
+                <div class="fp-content"><h3 class="fp-title">مشروع عمارة حي الوفاء</h3><div class="fp-meta"><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>جدة</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>حي الوفاء</span><span class="fp-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="22" height="16"/><path d="M1 10h22"/><path d="M12 6V2"/></svg>عمارة</span></div><div class="fp-progress-wrap"><div class="fp-progress-info"><span class="fp-progress-status">قيد التنفيذ</span><span class="fp-progress-val">40%</span></div><div class="fp-progress-track"><div class="fp-progress-bar fp-progress-bar--wip" data-width="40"></div></div></div><a href="Projects/Project5-Details/Project5.html" class="fp-link"><span>عرض المشروع</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></a></div>
               </div>
-            </div> -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
@@ -869,7 +870,7 @@
             <li><a href="about/about.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">من نحن</a></li>
             <li><a href="services/Services.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الخدمات</a></li>
             <li><a href="Projects/Projects.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المشاريع</a></li>
-            <li><a href="Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المقلات</a></li>
+            <!-- <li><a href="Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المقلات</a></li> -->
             <li><a href="Faq/Faq.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الاسئله الشائعه</a></li>
             <li><a href="Contact/Contact.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">اتصل بنا</a></li>
           </ul>

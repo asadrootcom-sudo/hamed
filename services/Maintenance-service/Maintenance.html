@@ -72,8 +72,8 @@
 
     #loader{position:fixed;inset:0;z-index:9999;background:#2F1D0C;display:flex;align-items:center;justify-content:center;transition:opacity .5s ease,visibility .5s ease}
     #loader.hidden{opacity:0;visibility:hidden}
-    .loader-diamond{width:24px;height:24px;border:2px solid #E3D8C8;transform:rotate(45deg);animation:loaderPulse 1s ease-in-out infinite}
-    @keyframes loaderPulse{0%,100%{opacity:.3;transform:rotate(45deg) scale(.8)}50%{opacity:1;transform:rotate(45deg) scale(1.2)}}
+   .loader-diamond{transform:rotate(0deg);animation:loaderPulse 1s ease-in-out infinite}
+    @keyframes loaderPulse{0%,100%{opacity:.3;transform:rotate(0deg) scale(.8)}50%{opacity:1;transform:rotate(0deg) scale(1.2)}}
 
     .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
     .reveal.active{opacity:1;transform:translateY(0)}
@@ -125,7 +125,7 @@
 </head>
 <body class="font-ar">
 
-  <div id="loader"><div class="loader-diamond"></div></div>
+  <div id="loader"><div class="loader-diamond"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="2" y="18" width="10" height="20" fill="#E3D8C8"/><rect x="15" y="10" width="10" height="28" fill="#E3D8C8" opacity="0.6"/><polygon points="25,10 38,10 31.5,2" fill="#E3D8C8"/><rect x="28" y="18" width="10" height="20" fill="#E3D8C8" opacity="0.4"/></svg></div></div>
   <div id="toast" class="toast"></div>
 
   <!-- Navigation -->
@@ -149,7 +149,7 @@
           <a href="/About/About.html" class="nav-link text-primary text-sm font-medium">من نحن</a>
           <a href="/services/Services.html" class="nav-link active text-primary text-sm font-medium">الخدمات</a>
           <a href="/Projects/Projects.html" class="nav-link text-primary text-sm font-medium">المشاريع</a>
-          <a href="/Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقلات</a>
+          <!-- <a href="/Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقلات</a> -->
           <a href="/Faq/Faq.html" class="nav-link text-primary text-sm font-medium">الأسئلة الشائعة</a>
           <a href="/Contact/Contact.html" class="nav-link text-primary text-sm font-medium">اتصل بنا</a>
         </div>
@@ -166,7 +166,7 @@
     <a href="/About/About.html" onclick="closeMobile()">من نحن</a>
     <a href="/services/Services.html" onclick="closeMobile()">الخدمات</a>
     <a href="/Projects/Projects.html" onclick="closeMobile()">المشاريع</a>
-    <a href="/Articles/Articles.html" onclick="closeMobile()">المقلات</a>
+    <!-- <a href="/Articles/Articles.html" onclick="closeMobile()">المقلات</a> -->
     <a href="/Faq/Faq.html" onclick="closeMobile()">الأسئلة الشائعة</a>
     <a href="/Contact/Contact.html" onclick="closeMobile()">اتصل بنا</a>
     <button onclick="closeMobile();openQuoteModal()" class="mt-6 bg-primary text-white text-lg font-medium px-10 py-3">اطلب عرض سعر</button>
@@ -515,7 +515,7 @@
             <li><a href="/About/About.html" class="text-light/50 text-sm hover:text-light transition-colors">من نحن</a></li>
             <li><a href="/services/Services.html" class="text-light/50 text-sm hover:text-light transition-colors">الخدمات</a></li>
             <li><a href="/Projects/Projects.html" class="text-light/50 text-sm hover:text-light transition-colors">المشاريع</a></li>
-            <li><a href="/Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors">المقلات</a></li>
+            <!-- <li><a href="/Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors">المقلات</a></li> -->
             <li><a href="/Faq/Faq.html" class="text-light/50 text-sm hover:text-light transition-colors">الأسئلة الشائعة</a></li>
             <li><a href="/Contact/Contact.html" class="text-light/50 text-sm hover:text-light transition-colors">اتصل بنا</a></li>
           </ul>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز المعرفة | مؤسسة حامد درويش الخميسي</title>
+    <meta name="description" content="مركز المعرفة لمؤسسة حامد درويش الخميسي — قسم قيد الإعداد سيقدّم محتوىً متخصصاً في المقاولات والبناء والترميم والتشطيبات والصيانة ومراحل تنفيذ المشاريع.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hamedgco.com/articles">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="مركز المعرفة | مؤسسة حامد درويش الخميسي">
+    <meta property="og:description" content="قسم المعرفة المتخصص في المقاولات والبناء والترميم والتشطيبات والصيانة — قيد الإعداد.">
+    <meta property="og:url" content="https://hamedgco.com/articles">
+    <meta property="og:site_name" content="مؤسسة حامد درويش الخميسي">
+    <meta property="og:locale" content="ar_SA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* === Reset & Base === */
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'Tajawal',sans-serif;background:#FAF7F2;color:#2F1D0C;overflow-x:hidden}
+        ::selection{background:#6E473B;color:#fff}
+        a{text-decoration:none;color:inherit}
+        ul{list-style:none}
+
+        /* === Scrollbar === */
+        ::-webkit-scrollbar{width:8px}
+        ::-webkit-scrollbar-track{background:#E3D8C8}
+        ::-webkit-scrollbar-thumb{background:#6E473B}
+        ::-webkit-scrollbar-thumb:hover{background:#2F1D0C}
+
+        /* === Container === */
+        .container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+        /* === Geometric Patterns === */
+        .geo-diagonal{background-image:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(110,71,59,0.06) 20px,rgba(110,71,59,0.06) 21px)}
+        .geo-grid{background-image:linear-gradient(rgba(110,71,59,0.08) 1px,transparent 1px),linear-gradient(90deg,rgba(110,71,59,0.08) 1px,transparent 1px);background-size:48px 48px}
+        .geo-blocks{background-image:linear-gradient(135deg,rgba(110,71,59,0.04) 25%,transparent 25%),linear-gradient(225deg,rgba(110,71,59,0.04) 25%,transparent 25%),linear-gradient(45deg,rgba(110,71,59,0.04) 25%,transparent 25%),linear-gradient(315deg,rgba(110,71,59,0.04) 25%,transparent 25%);background-size:60px 60px;background-position:30px 0,30px 0,0 0,0 0}
+
+        /* === Corner Brackets === */
+        .bracket-tr,.bracket-bl{position:relative}
+        .bracket-tr::before,.bracket-tr::after,.bracket-bl::before,.bracket-bl::after{content:'';position:absolute;background:#6E473B}
+        .bracket-tr::before{top:0;right:0;width:32px;height:2px}
+        .bracket-tr::after{top:0;right:0;width:2px;height:32px}
+        .bracket-bl::before{bottom:0;left:0;width:32px;height:2px}
+        .bracket-bl::after{bottom:0;left:0;width:2px;height:32px}
+
+        /* === Diamond === */
+        .diamond{width:12px;height:12px;background:#6E473B;transform:rotate(45deg);display:inline-block;flex-shrink:0}
+        .diamond-sm{width:8px;height:8px}
+        .diamond-lg{width:16px;height:16px}
+        .diamond-outline{background:transparent;border:2px solid #6E473B}
+        .diamond-white{background:#fff;border:none}
+
+        /* === Loading Screen === */
+        #loader{position:fixed;inset:0;z-index:9999;background:#2F1D0C;display:flex;align-items:center;justify-content:center;transition:opacity .5s ease,visibility .5s ease}
+        #loader.hidden{opacity:0;visibility:hidden}
+        .loader-diamond{width:24px;height:24px;border:2px solid #E3D8C8;transform:rotate(45deg);animation:loaderPulse 1s ease-in-out infinite}
+        @keyframes loaderPulse{0%,100%{opacity:.3;transform:rotate(45deg) scale(.8)}50%{opacity:1;transform:rotate(45deg) scale(1.2)}}
+
+        /* === Reveal Animations === */
+        .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+        .reveal.active{opacity:1;transform:translateY(0)}
+        .reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}
+        .reveal-right.active{opacity:1;transform:translateX(0)}
+        .reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+        .reveal-left.active{opacity:1;transform:translateX(0)}
+        .reveal-scale{opacity:0;transform:scale(.9);transition:opacity .6s ease,transform .6s ease}
+        .reveal-scale.active{opacity:1;transform:scale(1)}
+        .stagger-1{transition-delay:.1s}
+        .stagger-2{transition-delay:.2s}
+        .stagger-3{transition-delay:.3s}
+        .stagger-4{transition-delay:.4s}
+        .stagger-5{transition-delay:.5s}
+        .stagger-6{transition-delay:.6s}
+
+        /* === Navigation === */
+        #navbar{position:fixed;top:0;left:0;right:0;z-index:80;padding:16px 0;transition:all .3s ease}
+        .nav-scrolled{background:rgba(250,247,242,.97);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(47,29,12,.1)}
+        .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+        .nav-logo{font-size:15px;font-weight:700;color:#fff;transition:color .3s ease;white-space:nowrap;display:flex;align-items:center;gap:10px}
+        .nav-scrolled .nav-logo{color:#2F1D0C}
+        .nav-logo .logo-diamond{width:10px;height:10px;background:#E3D8C8;transform:rotate(45deg);flex-shrink:0;transition:background .3s ease}
+        .nav-scrolled .nav-logo .logo-diamond{background:#6E473B}
+        .nav-links{display:flex;align-items:center;gap:32px}
+        .nav-link{position:relative;padding:4px 0;font-size:15px;font-weight:500;color:rgba(255,255,255,.85);transition:color .3s ease}
+        .nav-scrolled .nav-link{color:#2F1D0C}
+        .nav-link::after{content:'';position:absolute;bottom:-2px;right:0;width:0;height:2px;background:#6E473B;transition:width .3s ease}
+        .nav-link:hover::after,.nav-link.active::after{width:100%}
+        .nav-link:hover{color:#fff}
+        .nav-scrolled .nav-link:hover{color:#6E473B}
+        .nav-cta{padding:10px 24px;background:#6E473B;color:#fff;font-family:'Tajawal',sans-serif;font-size:14px;font-weight:700;border:none;cursor:pointer;transition:background .3s ease}
+        .nav-cta:hover{background:#2F1D0C}
+
+        /* === Hamburger === */
+        .hamburger{display:none;flex-direction:column;gap:6px;background:none;border:none;cursor:pointer;padding:4px}
+        .hamburger span{display:block;width:24px;height:2px;background:#fff;transition:all .3s ease}
+        .nav-scrolled .hamburger span{background:#2F1D0C}
+        .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+        .hamburger.active span:nth-child(2){opacity:0}
+        .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+        @media(max-width:1023px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}}
+
+        /* === Mobile Menu === */
+        .mobile-menu{position:fixed;inset:0;z-index:90;background:rgba(250,247,242,.98);backdrop-filter:blur(16px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;visibility:hidden;transition:all .4s ease}
+        .mobile-menu.open{opacity:1;visibility:visible}
+        .mobile-menu a{font-size:24px;font-weight:700;color:#2F1D0C;padding:12px 24px;transition:color .2s ease}
+        .mobile-menu a:hover{color:#6E473B}
+
+        /* === Breadcrumbs === */
+        .breadcrumbs{padding:88px 0 0;background:#2F1D0C}
+        .breadcrumbs-inner{max-width:1200px;margin:0 auto;padding:0 24px 20px;display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(227,216,200,.5)}
+        .breadcrumbs a{color:rgba(227,216,200,.5);transition:color .2s ease}
+        .breadcrumbs a:hover{color:#E3D8C8}
+        .breadcrumbs .sep{color:rgba(227,216,200,.25)}
+        .breadcrumbs .current{color:#E3D8C8}
+
+        /* === Hero === */
+        .hero-articles{background:#2F1D0C;position:relative;padding:48px 0 96px;overflow:hidden}
+        .hero-articles .geo-grid{position:absolute;inset:0;opacity:.3}
+        .hero-content{position:relative;z-index:2;max-width:680px}
+        .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border:1px solid rgba(227,216,200,.2);margin-bottom:28px}
+        .hero-badge .diamond-sm{background:rgba(227,216,200,.6);animation:loaderPulse 2s ease-in-out infinite}
+        .hero-badge span{font-size:12px;font-weight:500;color:rgba(227,216,200,.7);letter-spacing:.5px}
+        .hero-content h1{font-size:38px;font-weight:900;color:#fff;line-height:1.35;margin-bottom:20px}
+        .hero-content p{font-size:15px;font-weight:400;color:rgba(227,216,200,.75);line-height:1.9;max-width:580px}
+        .hero-deco{position:absolute;left:6%;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;opacity:.12}
+        .hero-deco .deco-line{width:2px;height:100px;background:#E3D8C8}
+        .hero-deco .diamond-lg{background:#E3D8C8}
+        @media(max-width:768px){.hero-articles{padding:32px 0 64px}.hero-content h1{font-size:28px}.hero-deco{display:none}.hero-content p{font-size:14px}}
+
+        /* === Section Heading === */
+        .section-heading{display:flex;align-items:center;gap:16px;margin-bottom:48px}
+        .section-heading .heading-line{width:48px;height:2px;background:#6E473B;flex-shrink:0}
+        .section-heading h2{font-size:26px;font-weight:700;color:#2F1D0C}
+        @media(max-width:768px){.section-heading{margin-bottom:32px}.section-heading h2{font-size:22px}}
+
+        /* === Content Status Section === */
+        .content-status{padding:96px 0;background:#FAF7F2}
+        .content-status .intro-text{font-size:15px;color:rgba(47,29,12,.65);line-height:1.9;max-width:640px;margin-bottom:48px}
+        .topics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+        @media(max-width:1023px){.topics-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:640px){.topics-grid{grid-template-columns:1fr}}
+        .topic-card{background:#fff;border:1px solid rgba(47,29,12,.08);padding:28px 24px;position:relative;transition:all .3s ease}
+        .topic-card:hover{border-color:rgba(110,71,59,.2);box-shadow:0 8px 24px rgba(47,29,12,.06)}
+        .topic-card .topic-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;border:2px solid rgba(110,71,59,.15);margin-bottom:16px;color:#6E473B}
+        .topic-card .topic-icon svg{width:24px;height:24px}
+        .topic-card h3{font-size:20px;font-weight:600;color:#2F1D0C;margin-bottom:8px}
+        .topic-card p{font-size:14px;color:rgba(47,29,12,.55);line-height:1.75}
+        .topic-badge{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:12px;color:#6E473B;font-weight:500}
+        .topic-badge .pulse-dot{width:6px;height:6px;background:#6E473B;animation:pulseDot 2s ease-in-out infinite}
+        @keyframes pulseDot{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+
+        /* === Services Section === */
+        .services-section{padding:96px 0;background:#fff}
+        .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+        @media(max-width:1023px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:640px){.services-grid{grid-template-columns:1fr}}
+        .service-card{border:1px solid rgba(47,29,12,.08);background:#fff;transition:all .3s ease;position:relative;overflow:hidden;padding:32px 24px}
+        .service-card::before{content:'';position:absolute;top:0;right:0;width:0;height:3px;background:#6E473B;transition:width .4s ease}
+        .service-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(47,29,12,.1);border-color:rgba(110,71,59,.2)}
+        .service-card:hover::before{width:100%}
+        .service-card .card-icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;border:2px solid rgba(110,71,59,.15);color:#6E473B;margin-bottom:20px}
+        .service-card .card-icon svg{width:28px;height:28px}
+        .service-card h3{font-size:20px;font-weight:600;color:#2F1D0C;margin-bottom:10px}
+        .service-card p{font-size:14px;color:rgba(47,29,12,.55);line-height:1.75;margin-bottom:20px}
+        .card-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#6E473B;transition:gap .3s ease}
+        .service-card:hover .card-link{gap:12px}
+        .card-link svg{width:16px;height:16px;transition:transform .3s ease}
+        .service-card:hover .card-link svg{transform:translateX(-4px)}
+
+        /* === Projects Preview === */
+        .projects-preview{padding:96px 0;background:#E3D8C8;position:relative;overflow:hidden}
+        .projects-preview .geo-blocks{position:absolute;inset:0}
+        .projects-content{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:48px}
+        .projects-text{max-width:560px}
+        .projects-text p{font-size:15px;color:rgba(47,29,12,.65);line-height:1.9;margin-bottom:32px}
+        .projects-visual{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+        .projects-deco-block{background:#2F1D0C;padding:28px 36px;position:relative}
+        .projects-deco-block::before{content:'';position:absolute;top:-8px;right:-8px;width:32px;height:32px;border-top:2px solid #6E473B;border-right:2px solid #6E473B}
+        .projects-deco-block .deco-num{font-size:36px;font-weight:900;color:#fff;line-height:1}
+        .projects-deco-block .deco-label{font-size:12px;color:rgba(227,216,200,.6);margin-top:6px}
+        .btn-primary{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;background:#2F1D0C;color:#fff;font-family:'Tajawal',sans-serif;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .3s ease}
+        .btn-primary:hover{background:#6E473B}
+        .btn-primary svg{width:18px;height:18px}
+        @media(max-width:768px){.projects-content{flex-direction:column;text-align:center}.projects-text p{margin-left:auto;margin-right:auto}.projects-visual{align-items:center}.btn-primary{margin:0 auto}}
+
+        /* === CTA Section === */
+        .cta-section{background:#2F1D0C;padding:96px 0 80px;clip-path:polygon(0 8%,100% 0,100% 100%,0 100%);position:relative;overflow:hidden}
+        .cta-section .geo-diagonal{position:absolute;inset:0;opacity:.12}
+        .cta-content{position:relative;z-index:2;text-align:center}
+        .cta-content h2{font-size:26px;font-weight:700;color:#fff;margin-bottom:16px}
+        .cta-content p{font-size:15px;color:rgba(227,216,200,.65);margin-bottom:40px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.8}
+        .cta-buttons{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+        .btn-cta-dark{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:#6E473B;color:#fff;font-family:'Tajawal',sans-serif;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .3s ease}
+        .btn-cta-dark:hover{background:#8B5E52}
+        .btn-cta-dark svg{width:18px;height:18px}
+        .btn-cta-outline{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:transparent;color:#fff;font-family:'Tajawal',sans-serif;font-size:15px;font-weight:700;border:2px solid rgba(227,216,200,.25);cursor:pointer;transition:all .3s ease}
+        .btn-cta-outline:hover{border-color:#E3D8C8;background:rgba(227,216,200,.05)}
+        .btn-cta-outline svg{width:18px;height:18px}
+        .btn-cta-wa{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:#25D366;color:#fff;font-family:'Tajawal',sans-serif;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .3s ease}
+        .btn-cta-wa:hover{background:#1DA851}
+        .btn-cta-wa svg{width:18px;height:18px}
+        @media(max-width:768px){.cta-section{clip-path:polygon(0 4%,100% 0,100% 100%,0 100%);padding:72px 0 64px}.cta-buttons{flex-direction:column}.btn-cta-dark,.btn-cta-outline,.btn-cta-wa{width:100%;justify-content:center}.cta-content h2{font-size:22px}}
+
+        /* === Footer === */
+        .site-footer{background:#2F1D0C;padding:64px 0 0}
+        .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(227,216,200,.08)}
+        @media(max-width:1023px){.footer-grid{grid-template-columns:1fr 1fr}}
+        @media(max-width:640px){.footer-grid{grid-template-columns:1fr;gap:32px}}
+        .footer-brand h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+        .footer-brand h3 .logo-diamond{width:8px;height:8px;background:#E3D8C8;transform:rotate(45deg);flex-shrink:0}
+        .footer-brand p{font-size:14px;color:rgba(227,216,200,.5);line-height:1.8;max-width:320px}
+        .footer-col h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:20px;position:relative;padding-bottom:12px}
+        .footer-col h4::after{content:'';position:absolute;bottom:0;right:0;width:24px;height:2px;background:#6E473B}
+        .footer-col li{margin-bottom:10px}
+        .footer-col a{font-size:14px;color:rgba(227,216,200,.5);transition:color .2s ease}
+        .footer-col a:hover{color:#E3D8C8}
+        .footer-contact-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+        .footer-contact-item svg{width:18px;height:18px;color:#6E473B;flex-shrink:0;margin-top:2px}
+        .footer-contact-item span{font-size:14px;color:rgba(227,216,200,.5);line-height:1.6}
+        .footer-contact-item a{color:rgba(227,216,200,.5);font-size:14px;transition:color .2s ease}
+        .footer-contact-item a:hover{color:#E3D8C8}
+        .footer-bottom{padding:24px 0;text-align:center;font-size:13px;color:rgba(227,216,200,.3)}
+
+        /* === WhatsApp Float === */
+        .wa-float{position:fixed;bottom:24px;left:24px;z-index:100;width:56px;height:56px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform .3s ease,box-shadow .3s ease}
+        .wa-float:hover{transform:translateY(-3px);box-shadow:0 6px 24px rgba(37,211,102,.5)}
+        .wa-float svg{width:28px;height:28px;color:#fff}
+
+        /* === Back to Top === */
+        .back-top{position:fixed;bottom:24px;right:24px;z-index:100;width:44px;height:44px;background:#2F1D0C;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .3s ease;border:none;cursor:pointer}
+        .back-top.visible{opacity:1;visibility:visible}
+        .back-top:hover{background:#6E473B}
+        .back-top svg{width:20px;height:20px;color:#fff}
+
+        /* === Toast === */
+        .toast{position:fixed;top:100px;left:50%;transform:translateX(-50%) translateY(-20px);z-index:200;background:#2F1D0C;color:#fff;padding:14px 28px;font-family:'Tajawal',sans-serif;font-size:15px;opacity:0;transition:all .3s ease;pointer-events:none}
+        .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+        /* === Modal === */
+        #quoteModal{position:fixed;inset:0;z-index:150;background:rgba(47,29,12,.6);display:flex;align-items:center;justify-content:center;padding:24px;transition:opacity .3s ease,visibility .3s ease}
+        #quoteModal.hidden{opacity:0;visibility:hidden;pointer-events:none}
+        .modal-content{background:#FAF7F2;max-width:520px;width:100%;padding:40px;position:relative;transform:translateY(20px);transition:transform .3s ease}
+        #quoteModal:not(.hidden) .modal-content{transform:translateY(0)}
+        .modal-close{position:absolute;top:16px;left:16px;background:none;border:none;cursor:pointer;color:#2F1D0C;padding:4px}
+        .modal-close svg{width:20px;height:20px}
+        .modal-content h3{font-size:20px;font-weight:600;color:#2F1D0C;margin-bottom:24px}
+        .form-group{margin-bottom:16px}
+        .form-label{display:block;font-size:14px;font-weight:500;color:#2F1D0C;margin-bottom:6px}
+        .form-input{width:100%;padding:12px 16px;border:1px solid rgba(47,29,12,.15);background:#fff;font-family:'Tajawal',sans-serif;font-size:15px;color:#2F1D0C;transition:border-color .2s ease;outline:none}
+        .form-input:focus{border-color:#6E473B}
+        .form-input::placeholder{color:rgba(47,29,12,.35)}
+        textarea.form-input{resize:vertical;min-height:100px}
+        .form-submit{width:100%;padding:14px;background:#2F1D0C;color:#fff;font-family:'Tajawal',sans-serif;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .3s ease;margin-top:8px}
+        .form-submit:hover{background:#6E473B}
+
+        /* === Reduced Motion === */
+        @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal,.reveal-right,.reveal-left,.reveal-scale{opacity:1;transform:none}}
+    </style>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader"><div class="loader-diamond"></div></div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <span class="logo-diamond"></span>
+                مؤسسة حامد درويش الخميسي
+            </a>
+            <nav class="nav-links">
+                <a href="/" class="nav-link">الرئيسية</a>
+                <a href="/projects" class="nav-link">المشاريع</a>
+                <a href="/services" class="nav-link">الخدمات</a>
+                <a href="/articles" class="nav-link active">مركز المعرفة</a>
+                <a href="/about" class="nav-link">من نحن</a>
+                <a href="/contact" class="nav-link">اتصل بنا</a>
+            </nav>
+            <button class="nav-cta" onclick="openModal()">طلب عرض سعر</button>
+            <button class="hamburger" onclick="toggleMobile()" aria-label="القائمة">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="/" onclick="closeMobile()">الرئيسية</a>
+        <a href="/projects" onclick="closeMobile()">المشاريع</a>
+        <a href="/services" onclick="closeMobile()">الخدمات</a>
+        <a href="/articles" onclick="closeMobile()">مركز المعرفة</a>
+        <a href="/about" onclick="closeMobile()">من نحن</a>
+        <a href="/contact" onclick="closeMobile()">اتصل بنا</a>
+        <button class="nav-cta" style="margin-top:16px" onclick="closeMobile();openModal()">طلب عرض سعر</button>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="مسار التنقل">
+        <div class="breadcrumbs-inner">
+            <a href="/">الرئيسية</a>
+            <span class="sep">/</span>
+            <span class="current">مركز المعرفة</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-articles">
+        <div class="geo-grid"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <span class="diamond-sm"></span>
+                    <span>قسم قيد الإعداد</span>
+                </div>
+                <h1>مركز المعرفة</h1>
+                <p>نعمل على إعداد محتوى متخصص يهدف إلى مساعدتك على فهم مراحل البناء والمقاولات والخدمات المرتبطة بمشروعك، من التخطيط وحتى التسليم النهائي.</p>
+            </div>
+        </div>
+        <div class="hero-deco">
+            <div class="deco-line"></div>
+            <span class="diamond-lg"></span>
+            <div class="deco-line"></div>
+        </div>
+    </section>
+
+    <!-- Content Status Section -->
+    <section class="content-status" id="contentStatus">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="heading-line"></span>
+                <h2>محتوى متخصص قيد الإعداد</h2>
+            </div>
+            <p class="intro-text reveal">
+                نعمل حالياً على إعداد مجموعة من المقالات والمحتوى المتخصص الذي يساعد عملاءنا على فهم الخدمات ومراحل تنفيذ المشاريع واتخاذ قرارات أفضل. فيما يلي المحاور التي سيتم تناولها:
+            </p>
+            <div class="topics-grid">
+                <!-- Topic 1 -->
+                <div class="topic-card bracket-bl reveal stagger-1">
+                    <div class="topic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V7l7-4 7 4v14"/>
+                            <path d="M9 21v-6h6v6"/>
+                        </svg>
+                    </div>
+                    <h3>المقاولات العامة</h3>
+                    <p>سنتناول موضوعات حول أنواع المقاولات والمتطلبات الهندسية والتنظيمية المرتبطة بكل نوع.</p>
+                    <div class="topic-badge">
+                        <span class="pulse-dot"></span>
+                        قيد الإعداد
+                    </div>
+                </div>
+                <!-- Topic 2 -->
+                <div class="topic-card reveal stagger-2">
+                    <div class="topic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V8l7-5 7 5v13"/>
+                            <path d="M9 21v-4h6v4"/>
+                            <path d="M10 9h4"/>
+                        </svg>
+                    </div>
+                    <h3>بناء الفلل</h3>
+                    <p>إرشادات حول مراحل بناء الفلل من اختيار الأرض ودراساتها حتى التسليم النهائي.</p>
+                    <div class="topic-badge">
+                        <span class="pulse-dot"></span>
+                        قيد الإعداد
+                    </div>
+                </div>
+                <!-- Topic 3 -->
+                <div class="topic-card bracket-tr reveal stagger-3">
+                    <div class="topic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>الترميم</h3>
+                    <p>نصائح حول أساليب الترميم الحديثة وكيفية التعامل مع مختلف حالات المباني.</p>
+                    <div class="topic-badge">
+                        <span class="pulse-dot"></span>
+                        قيد الإعداد
+                    </div>
+                </div>
+                <!-- Topic 4 -->
+                <div class="topic-card reveal stagger-4">
+                    <div class="topic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>التشطيبات</h3>
+                    <p>دليل لاختيار مواد التشطيب المناسبة والفرق بين الأنواع المتاحة في السوق.</p>
+                    <div class="topic-badge">
+                        <span class="pulse-dot"></span>
+                        قيد الإعداد
+                    </div>
+                </div>
+                <!-- Topic 5 -->
+                <div class="topic-card reveal stagger-5">
+                    <div class="topic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h3>الصيانة</h3>
+                    <p>مقالات عن الصيانة الدورية والوقائية وما يساعد في الحفاظ على استثمارك العقاري.</p>
+                    <div class="topic-badge">
+                        <span class="pulse-dot"></span>
+                        قيد الإعداد
+                    </div>
+                </div>
+                <!-- Topic 6 -->
+                <div class="topic-card reveal stagger-6">
+                    <div class="topic-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+                            <line x1="4" y1="22" x2="4" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>مراحل تنفيذ المشاريع</h3>
+                    <p>شرح المراحل التسلسلية لتنفيذ المشاريع الإنشائية من التخطيط حتى الاستلام.</p>
+                    <div class="topic-badge">
+                        <span class="pulse-dot"></span>
+                        قيد الإعداد
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-heading reveal">
+                <span class="heading-line"></span>
+                <h2>استكشف خدماتنا</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <a href="/services/general-contracting" class="service-card reveal stagger-1">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <rect x="2" y="6" width="20" height="12" rx="0"/>
+                            <path d="M12 6V4"/>
+                            <path d="M10 22h4"/>
+                            <path d="M8 22h8"/>
+                        </svg>
+                    </div>
+                    <h3>المقاولات العامة</h3>
+                    <p>حلول مقاولات شاملة للمشاريع السكنية والتجارية بمعايير جودة عالية والتزام بالمواعيد.</p>
+                    <span class="card-link">
+                        اعرف المزيد
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </span>
+                </a>
+                <!-- Service 2 -->
+                <a href="/services/villa-construction" class="service-card reveal stagger-2">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V8l7-5 7 5v13"/>
+                            <path d="M9 21v-4h6v4"/>
+                        </svg>
+                    </div>
+                    <h3>بناء الفلل</h3>
+                    <p>تصميم وبناء فلل بمعايير هندسية مميزة تلبي تطلعاتكم وتناسب احتياجاتكم.</p>
+                    <span class="card-link">
+                        اعرف المزيد
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </span>
+                </a>
+                <!-- Service 3 -->
+                <a href="/services/renovation" class="service-card reveal stagger-3">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>الترميم</h3>
+                    <p>إعادة تأهيل المباني مع الحفاظ على طابعها الأصلي وتعزيز أدائها الإنشائي.</p>
+                    <span class="card-link">
+                        اعرف المزيد
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </span>
+                </a>
+                <!-- Service 4 -->
+                <a href="/services/finishes" class="service-card reveal stagger-4">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>التشطيبات</h3>
+                    <p>تشطيبات داخلية وخارجية متكاملة بأحدث المواد والتقنيات المتطورة.</p>
+                    <span class="card-link">
+                        اعرف المزيد
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </span>
+                </a>
+                <!-- Service 5 -->
+                <a href="/services/maintenance" class="service-card reveal stagger-5">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>الصيانة</h3>
+                    <p>خدمات صيانة دورية ووقائية للحفاظ على جودة المباني وطول عمرها الافتراضي.</p>
+                    <span class="card-link">
+                        اعرف المزيد
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="projects-preview" id="projectsPreview">
+        <div class="geo-blocks"></div>
+        <div class="container">
+            <div class="projects-content">
+                <div class="projects-text reveal-right">
+                    <div class="section-heading">
+                        <span class="heading-line"></span>
+                        <h2>تعرّف على مشاريعنا</h2>
+                    </div>
+                    <p>مشاريعنا المنفذة تعكس خبرتنا العملية والتزامنا بأعلى معايير الجودة. يمكنك الاطلاع على تفاصيل المشاريع التي نفذناها في مختلف مجالات البناء والترميم والتشطيبات.</p>
+                    <a href="/projects" class="btn-primary">
+                        استعرض المشاريع
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </a>
+                </div>
+                <div class="projects-visual reveal-left">
+                    <div class="projects-deco-block">
+                        <span class="deco-num">25+</span>
+                        <span class="deco-label">سنة من الخبرة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="ctaSection">
+        <div class="geo-diagonal"></div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>هل لديك مشروع وتبحث عن شركة مقاولات؟</h2>
+                <p>فريقنا جاهز لدراسة متطلبات مشروعك وتقديم الحلول الهندسية المناسبة. تواصل معنا الآن لمناقشة تفاصيل مشروعك.</p>
+                <div class="cta-buttons">
+                    <button class="btn-cta-dark" onclick="openModal()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+                        اطلب عرض سعر
+                    </button>
+                    <a href="https://wa.me/966550000000" target="_blank" rel="noopener noreferrer" class="btn-cta-wa">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                        تواصل عبر واتساب
+                    </a>
+                    <a href="/services" class="btn-cta-outline">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        استعرض خدماتنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><span class="logo-diamond"></span> مؤسسة حامد درويش الخميسي</h3>
+                    <p>مؤسسة متخصصة في تقديم الحلول الهندسية والاستشارية وخدمات البناء والتشييد بأعلى معايير الجودة والالتزام.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="/">الرئيسية</a></li>
+                        <li><a href="/projects">المشاريع</a></li>
+                        <li><a href="/services">الخدمات</a></li>
+                        <li><a href="/articles">مركز المعرفة</a></li>
+                        <li><a href="/about">من نحن</a></li>
+                        <li><a href="/contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="/services/general-contracting">المقاولات العامة</a></li>
+                        <li><a href="/services/villa-construction">بناء الفلل</a></li>
+                        <li><a href="/services/renovation">الترميم</a></li>
+                        <li><a href="/services/finishes">التشطيبات</a></li>
+                        <li><a href="/services/maintenance">الصيانة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <a href="tel:+966550000000" dir="ltr">+966 55 000 0000</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:info@hamedgco.com" dir="ltr">info@hamedgco.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>الرياض، المملكة العربية السعودية</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <a href="https://hamedgco.com" dir="ltr">hamedgco.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="currentYear"></span> مؤسسة حامد درويش الخميسي — جميع الحقوق محفوظة
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/966550000000" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="تواصل عبر واتساب">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="backTop" class="back-top" aria-label="العودة للأعلى" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="hidden" role="dialog" aria-modal="true">
+        <div class="modal-content bracket-tr bracket-bl">
+            <button class="modal-close" onclick="closeModal()" aria-label="إغلاق">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <h3>طلب عرض سعر</h3>
+            <form onsubmit="handleQuoteForm(event)">
+                <div class="form-group">
+                    <label class="form-label" for="quoteName">الاسم الكامل</label>
+                    <input type="text" id="quoteName" class="form-input" placeholder="أدخل اسمك الكامل" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="quotePhone">رقم الجوال</label>
+                    <input type="tel" id="quotePhone" class="form-input" placeholder="05XXXXXXXX" dir="ltr" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="quoteService">نوع الخدمة</label>
+                    <select id="quoteService" class="form-input" required>
+                        <option value="" disabled selected>اختر الخدمة المطلوبة</option>
+                        <option value="general-contracting">المقاولات العامة</option>
+                        <option value="villa-construction">بناء الفلل</option>
+                        <option value="renovation">الترميم</option>
+                        <option value="finishes">التشطيبات</option>
+                        <option value="maintenance">الصيانة</option>
+                        <option value="other">خدمة أخرى</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="quoteDetails">تفاصيل المشروع</label>
+                    <textarea id="quoteDetails" class="form-input" placeholder="اشرح briefly عن مشروعك ومتطلباته" rows="4"></textarea>
+                </div>
+                <button type="submit" class="form-submit">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // === Current Year ===
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // === Loading Screen ===
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loader').classList.add('hidden');
+            }, 600);
+        });
+
+        // === Navigation Scroll Effect ===
+        var navbar = document.getElementById('navbar');
+        var backTop = document.getElementById('backTop');
+
+        window.addEventListener('scroll', function() {
+            var currentScroll = window.scrollY;
+            if (currentScroll > 60) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+            if (currentScroll > 500) {
+                backTop.classList.add('visible');
+            } else {
+                backTop.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        // === Mobile Menu ===
+        function toggleMobile() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('open') ? 'hidden' : '';
+        }
+        function closeMobile() {
+            document.getElementById('mobileMenu').classList.remove('open');
+            document.querySelector('.hamburger').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // === Modal ===
+        function openModal() {
+            document.getElementById('quoteModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('quoteModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // === Scroll Reveal ===
+        var revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal, .reveal-right, .reveal-left, .reveal-scale').forEach(function(el) {
+            revealObserver.observe(el);
+        });
+
+        // === Toast Notification ===
+        function showToast(message) {
+            var toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(function() { toast.classList.remove('show'); }, 3000);
+        }
+
+        // === Form Handler ===
+        function handleQuoteForm(e) {
+            e.preventDefault();
+            closeModal();
+            showToast('تم إرسال طلب عرض السعر بنجاح! سيتواصل معك فريقنا قريباً.');
+            e.target.reset();
+        }
+
+        // === Close modal on backdrop click ===
+        document.getElementById('quoteModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+    </script>
+
+</body>
+</html>

@@ -72,12 +72,11 @@
     }
     #loader.hidden { opacity: 0; visibility: hidden; }
     .loader-diamond {
-      width: 24px; height: 24px; border: 2px solid #E3D8C8;
-      transform: rotate(45deg); animation: loaderPulse 1s ease-in-out infinite;
+      transform: rotate(0deg); animation: loaderPulse 1s ease-in-out infinite;
     }
     @keyframes loaderPulse {
-      0%, 100% { opacity: 0.3; transform: rotate(45deg) scale(0.8); }
-      50% { opacity: 1; transform: rotate(45deg) scale(1.2); }
+      0%, 100% { opacity: 0.3; transform: rotate(0deg) scale(0.8); }
+      50% { opacity: 1; transform: rotate(0deg) scale(1.2); }
     }
 
     /* Reveal Animations */

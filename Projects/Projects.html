@@ -86,7 +86,7 @@
 </head>
 <body class="font-ar">
 
-  <div id="loader"><div class="loader-diamond"></div></div>
+    <div id="loader"><div class="loader-diamond"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect x="2" y="18" width="10" height="20" fill="#E3D8C8"/><rect x="15" y="10" width="10" height="28" fill="#E3D8C8" opacity="0.6"/><polygon points="25,10 38,10 31.5,2" fill="#E3D8C8"/><rect x="28" y="18" width="10" height="20" fill="#E3D8C8" opacity="0.4"/></svg></div></div>
   <div id="toast" class="toast"></div>
 
   <!-- Nav -->
@@ -102,7 +102,7 @@
           <a href="../About/About.html" class="nav-link text-primary text-sm font-medium">من نحن</a>
           <a href="../services/Services.html" class="nav-link text-primary text-sm font-medium">الخدمات</a>
           <a href="Projects.html" class="nav-link active text-primary text-sm font-medium" style="font-weight:bold;">المشاريع</a>
-          <a href="../Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقالات</a>
+          <!-- <a href="../Articles/Articles.html" class="nav-link text-primary text-sm font-medium">المقالات</a> -->
           <a href="../Faq/Faq.html" class="nav-link text-primary text-sm font-medium">الأسئلة الشائعة</a>
           <a href="../Contact/Contact.html" class="nav-link text-primary text-sm font-medium">اتصل بنا</a>
         </div>
@@ -114,7 +114,7 @@
     </div>
   </nav>
   <div id="mobileMenu" class="mobile-menu">
-    <a href="../index.html" onclick="closeMobile()">الرئيسية</a><a href="../About/About.html" onclick="closeMobile()">من نحن</a><a href="../services/Services.html" onclick="closeMobile()">الخدمات</a><a href="Projects.html" onclick="closeMobile()" style="font-weight:bold;">المشاريع</a><a href="../Articles/Articles.html" onclick="closeMobile()">المقالات</a><a href="../Faq/Faq.html" onclick="closeMobile()">الأسئلة الشائعة</a><a href="../Contact/Contact.html" onclick="closeMobile()">اتصل بنا</a>
+    <a href="../index.html" onclick="closeMobile()">الرئيسية</a><a href="../About/About.html" onclick="closeMobile()">من نحن</a><a href="../services/Services.html" onclick="closeMobile()">الخدمات</a><a href="Projects.html" onclick="closeMobile()" style="font-weight:bold;">المشاريع</a><a href="../Faq/Faq.html" onclick="closeMobile()">الأسئلة الشائعة</a><a href="../Contact/Contact.html" onclick="closeMobile()">اتصل بنا</a>
     <button onclick="closeMobile();openModal()" class="mt-6 bg-primary text-white text-lg font-medium px-10 py-3">اطلب عرض سعر</button>
   </div>
 
@@ -263,23 +263,22 @@
         </a>
 
         <!-- Proj 5 (Wide Card with Progress) -->
-        <!-- <a href="Project5-Details/Project5.html" class="mktg-card group block bg-bg border border-primary/8 overflow-hidden md:col-span-2 lg:col-span-2 reveal stagger-5">
-          <div class="lg:flex h-full">
-            <div class="mktg-img-wrap lg:w-1/2 aspect-[4/3] lg:aspect-auto overflow-hidden">
-              <img src="https://mostaql.hsoubcdn.com/uploads/thumbnails/331985/64cf9e24ac1a2/c01.jpg" alt="مشروع تحت التنفيذ حي الوفاء" class="w-full h-full object-cover brand-img" loading="lazy">
-              <span class="absolute top-4 right-4 z-10 bg-light text-primary text-xs font-bold px-4 py-1.5">قيد التنفيذ</span>
-            </div>
-            <div class="p-8 lg:p-10 flex flex-col justify-center lg:w-1/2">
-              <h3 class="text-2xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">مشروع عمارة حي الوفاء</h3>
-              <p class="text-secondary/70 text-sm leading-relaxed mb-6">مشروع إنشائي ضخم يعكس التزامنا بالجودة والمواعيد. نعمل على تنفيذ المراحل الإنشائية والتشطيبات بتقارير دورية لضمان الشفافية الكاملة.</p>
-              <div class="flex justify-between text-xs font-bold text-primary mb-2 max-w-md"><span>نسبة الإنجاز الحالية</span><span class="font-en" style="direction:ltr">40%</span></div>
-              <div class="mktg-progress-track mb-6 max-w-md"><div class="mktg-progress-fill" data-width="40"></div></div>
-              <div class="pt-4 border-t border-primary/5">
-                <span class="inline-flex items-center gap-2 text-base font-bold text-secondary group-hover:gap-3 transition-all">استعرض تفاصيل المشروع <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></span>
-              </div>
+        <a href="Project5-Details/Project5.html" class="mktg-card group block bg-bg border border-primary/8 overflow-hidden reveal stagger-4">
+          <div class="mktg-img-wrap relative aspect-[4/3] overflow-hidden">
+            <img src="https://mostaql.hsoubcdn.com/uploads/thumbnails/331985/64cf9e24ac1a2/c01.jpg" alt="مشروع تحت التنفيذ حي الوفاء" class="w-full h-full object-cover brand-img" loading="lazy">
+            <span class="absolute top-4 right-4 z-10 bg-light text-primary text-xs font-bold px-4 py-1.5">قيد التنفيذ</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">مشروع عمارة حي الوفاء</h3>
+            <div class="flex justify-between text-xs font-bold text-primary mb-2 mt-4"><span>نسبة الإنجاز الحالية</span><span class="font-en" style="direction:ltr">40%</span></div>
+            <div class="mktg-progress-track mb-4"><div class="mktg-progress-fill" data-width="40"></div></div>
+            <div class="flex items-center justify-between pt-4 border-t border-primary/5">
+              <span class="flex items-center gap-1 text-xs text-secondary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> جدة</span>
+              <span class="flex items-center gap-2 text-sm font-bold text-secondary group-hover:gap-3 transition-all">التفاصيل <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></span>
             </div>
           </div>
-        </a> -->
+        </a>
+
       </div>
     </div>
   </section>
@@ -411,7 +410,7 @@
             <li><a href="about/about.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">من نحن</a></li>
             <li><a href="services/Services.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الخدمات</a></li>
             <li><a href="Projects/Projects.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المشاريع</a></li>
-            <li><a href="Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المقلات</a></li>
+            <!-- <li><a href="Articles/Articles.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">المقلات</a></li> -->
             <li><a href="Faq/Faq.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">الاسئله الشائعه</a></li>
             <li><a href="Contact/Contact.html" class="text-light/50 text-sm hover:text-light transition-colors duration-200">اتصل بنا</a></li>
           </ul>
